@@ -1,60 +1,80 @@
-html {scroll-behavior: smooth;}
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&family=IBM+Plex+Sans:wght@300&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
 
 img {
   width: 100%;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&family=IBM+Plex+Sans:wght@300&display=swap');
-
 :root {
-    --cream: #FEF4E6;
-    --white: #FFFFFF;
-    --black: #000000;
-    --light-green: #F4F7EA;
-    --dark-green: #4B5952;
-    --blue: #79B3D6;
-    --pink: #F9CCC2;
-    --orange: #FF663E;
-    --caramel: #B79F7F;
+  --cream: #fef4e6;
+  --white: #ffffff;
+  --black: #000000;
+  --light-green: #f4f7ea;
+  --dark-green: #4b5952;
+  --blue: #79b3d6;
+  --pink: #f9ccc2;
+  --orange: #ff663e;
+  --caramel: #b79f7f;
 }
 
-a {text-decoration:none;
-    color: inherit;}
+a {
+  text-decoration: none;
+  color: inherit;
+  font-family: 1em;
+}
 
 nav {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   background-color: var(--orange);
-  padding: 0.6em 1em;
+  padding: 0.8em 1em;
   color: var(--white);
 }
 
-h1, h2, button {font-family: 'IBM Plex Mono', monospace;}
-
-a, p {font-family: 'IBM Plex Sans', sans-serif;}
-
-
-h1 {font-size: 2.2em;}
-
-h2 {font-size:1em;
-text-transform: uppercase;}
-
-h3 {font-size:0.2em;
-color: var(--caramel);}
-
-p {font-size:1em;
-    font-weight: lighter;
-    line-height: 1.2em;}
-
+h1,
+h2,
 button {
-    color: var(--white);
-    border: 1px solid var(--orange);
-    background-color: var(--orange);
-    text-transform: uppercase;
-    padding:1em;
-    margin-bottom:2em;
+  font-family: "IBM Plex Mono", monospace;
 }
 
+a,
+p,
+h3 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 0.4em;
+  color: var(--caramel);
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.2em;
+}
+
+button {
+  color: var(--white);
+  border: 1px solid var(--orange);
+  background-color: var(--orange);
+  padding: 1em;
+  margin-bottom: 4em;
+  text-transform: uppercase;
+}
 
 .nav-left {
   display: flex;
@@ -92,12 +112,15 @@ button {
   text-align: center;
   display: flex;
   flex-direction: column;
-justify-content: center;
+  justify-content: center;
   align-items: center;
   margin: 3em;
 }
 
-.banner-text a {text-decoration:underline;margin-top: 1.2em;}
+.banner-text a {
+  text-decoration: underline;
+  margin-top: 1.2em;
+}
 
 .usp-container {
   display: grid;
@@ -108,8 +131,13 @@ justify-content: center;
   color: var(--white);
 }
 
+.usp > * {
+  padding-bottom: 1em;
+}
 
-.usp > * {padding-bottom: 1em;}
+.usp a {
+  text-decoration: underline;
+}
 
 .vector {
   height: 4em;
@@ -119,40 +147,61 @@ justify-content: center;
   text-align: center;
 }
 
-.product-banner { text-align: center;
-    margin-top: 2em;
+.product-banner {
+  text-align: center;
+  margin-top: 2em;
 }
 
-
-.product-display{ display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 10vw;
-    grid-column-gap: 10vw;
-    padding: 3em 10vw;
+.product-display {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 10vw;
+  padding: 3em 10vw;
 }
 
-.product-container > * {padding-bottom: 0.2em;}
-
-button {text-align:center;}
-
-.subscribe-banner {  
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    background-color: var(--orange);
-    padding: 10em 10vw;
-    color: var(--white);
+.product-container > * {
+  padding-bottom: 0.2em;
 }
 
-.subscribe-banner >* {padding-bottom: 1em;}
+button {
+  text-align: center;
+}
 
+.subscribe-banner {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--orange);
+  padding: 10em 10vw;
+  color: var(--white);
+}
+
+.subscribe-banner > * {
+  padding-bottom: 1em;
+}
 
 .button-white {
-    color: var(--white);
-    border: 1px solid var(--white);
-    background-color: var(--orange);
-    text-transform: uppercase;
-    padding:1em
+  color: var(--white);
+  border: 1px solid var(--white);
+  background-color: var(--orange);
+  text-transform: uppercase;
+  padding: 1em;
 }
+footer {display: grid;}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 10vw;
+  padding: 3em 6vw;
+  font-size: 0.6;
+}
+
+.footer-container > * {font-size: 0.8em;}
+
+.to-top {text-align: center;
+  font-size: 0.8em;
+color: var(--orange);padding-bottom: 2em;
+text-transform: uppercase;}
