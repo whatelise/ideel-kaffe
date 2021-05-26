@@ -42,7 +42,7 @@ button {
 
 a,
 p,
-h3 {
+h3, form {
   font-family: "IBM Plex Sans", sans-serif;
   font-weight: 300;
 }
@@ -58,7 +58,7 @@ h2 {
 }
 
 h3 {
-  font-size: 0.4em;
+  font-size: 0.5em;
   color: var(--caramel);
 }
 
@@ -106,6 +106,13 @@ button {
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: var(--cream);
+}
+
+.certificate {
+  position: fixed;
+  right: 3em;
+  bottom: 3.6em;
+  width: 6.5em;
 }
 
 .banner-text {
@@ -176,6 +183,7 @@ button {
   background-color: var(--orange);
   padding: 10em 10vw;
   color: var(--white);
+  mix-blend-mode: difference;
 }
 
 .subscribe-banner > * {
@@ -189,7 +197,11 @@ button {
   text-transform: uppercase;
   padding: 1em;
 }
-footer {display: grid;}
+
+
+footer {display: grid; background-color: var(--cream);
+  mix-blend-mode:lighten;}
+  
 
 .footer-container {
   display: grid;
