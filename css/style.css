@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&family=IBM+Plex+Sans:wght@300&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  width: 100%;
+}
+
+:root {
+  --cream: #fef4e6;
+  --white: #ffffff;
+  --black: #000000;
+  --light-green: #f4f7ea;
+  --dark-green: #4b5952;
+  --blue: #79b3d6;
+  --pink: #f9ccc2;
+  --orange: #ff663e;
+  --caramel: #b79f7f;
+}
+  
+  nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: var(--orange);
+    padding: 0.8em 1em;
+    color: var(--white);
+  }
+  
+  h1,
+  h2,
+  button {
+    font-family: "IBM Plex Mono", monospace;
+  }
+  
+  a,
+  p,
+  h3, form {
+    font-family: "IBM Plex Sans", sans-serif;
+  }
+  
+  h1 {
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 0.8em;
+  }
+  
+  h2 {
+    font-size: 1em;
+    font-weight: 200;
+    text-transform: uppercase;
+  }
+  
+  h3 {
+    font-size: 0.5em;
+    color: var(--caramel);
+  }
+  
+  p {
+    font-size: 1em;
+    line-height: 1.2em;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1em;
+  }
+  
+  button {
+    color: var(--white);
+    border: 1px solid var(--orange);
+    background-color: var(--orange);
+    padding: 1em;
+    text-transform: uppercase;
+  }
+  
+  .nav-left {
+    display: flex;
+    text-align: left;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .nav-right {
+    display: flex;
+    text-align: right;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 3em;
+    text-align: center;
+    justify-content: center;
+  }
+
+
+  
+
+footer {display: grid; background-color: var(--cream);
+    mix-blend-mode:luminosity;}
+    
+  
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 0vw;
+    padding: 3em 6vw;
+    font-size: 0.6;
+  }
+  
+  .footer-container > * {font-size: 0.8em;}
+  
+  input[type=email] {
+    background-color: var(--cream);
+    border: 1px solid var(--black);
+    padding: 0.4em;
+    margin-top: 0.4em;
+    width: 100%;
+  }
+  
+  .form-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  input[type=submit] {
+    position: absolute;
+    right: 0.6em;
+    top: 0.9em;
+    background-color: transparent;
+    border: none;
+    text-transform: uppercase;
+  }
+  
+  .socials, .important-links {margin-left: 10vw;
+    display: inline-block;
+  }
+  
+  .to-top {text-align: center;
+    font-size: 0.8em;
+  color: var(--orange);padding-bottom: 2em;
+  text-transform: uppercase;}
+  
