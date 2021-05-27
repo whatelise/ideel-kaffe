@@ -101,6 +101,8 @@ button {
 .sub-1, .sub-2, .sub-3, .sub-4 {  
 font-family: "IBM Plex Mono", monospace;
 font-size: 2em;
+font-weight: 600;
+margin-bottom: 0.8em;
 }
 
 .sub-1 {

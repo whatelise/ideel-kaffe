@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&family=IBM+Plex+Sans:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;1,200&family=IBM+Plex+Sans:wght@100;200;300;400;500&display=swap');
 
 * {
     margin: 0;
@@ -53,24 +53,26 @@ img {
   
   h2 {
     font-size: 1em;
-    font-weight: 200;
+    font-weight: 300;
     text-transform: uppercase;
   }
   
   h3 {
     font-size: 0.5em;
+    font-weight: 200;
     color: var(--caramel);
   }
   
   p {
-    font-size: 1em;
+    font-size: 0.8em;
+    font-weight: 200;
     line-height: 1.2em;
   }
 
   a {
     text-decoration: none;
     color: inherit;
-    font-size: 1em;
+    font-size: 0.8em;
   }
   
   button {
