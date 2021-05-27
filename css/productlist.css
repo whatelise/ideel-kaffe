@@ -1,0 +1,45 @@
+.center-header {
+  text-align: center;
+}
+.banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--cream);
+}
+.banner-text {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2em 6vw;
+}
+
+.banner-text a {
+  text-decoration: underline;
+  margin-top: 1.2em;
+}
+
+.suflower-banner {
+  background-color: var(--pink);
+  color: var(--white);
+}
+
+.farmer-banner {
+  background-color: var(--light-green);
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 10vw;
+  padding: 3em 10vw;
+}
+
+.product-container > * {
+  padding-bottom: 0.2em;
+}
+
+button {
+  text-align: center;
+}
