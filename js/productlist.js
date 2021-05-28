@@ -27,13 +27,14 @@ function showProducts(products) {
     const copy = template.cloneNode(true);
     copy.querySelector(".name").textContent = product.name;
     copy.querySelector(".origin").textContent = product.origin;
-    // copy.querySelector(".productImage").src = product.imgurl1;
-    // copy.querySelector(".productImage").alt = product.name + " " + "color";
-    // product.color.forEach((color) => {
-    //   const div = document.createElement("div");
-    //   div.style.background = color;
-    //   copy.querySelector(".colorpicker").appendChild(div);
-    // });
+    copy.querySelector(".productImage").src = product.productimage;
+    copy.querySelector(".productImage").alt = product.name + "product image";
+
+    const intensity = product.intensity;
+    const div = document.createElement("div") * intensity;
+    div.style.background = "#FF663E";
+    copy.querySelector(".rating").appendChild(div);
+
     copy.querySelector(".price").textContent = product.price + ".00 DKK";
     // copy.querySelector(".shop-button").setAttribute("data-id", product._id);
     // copy.querySelector(".shop-button").addEventListener("click", () => {
@@ -46,3 +47,5 @@ function showProducts(products) {
     document.querySelector(".product-list").appendChild(copy);
   });
 }
+
+//* define intensity, create div, div * intensity
