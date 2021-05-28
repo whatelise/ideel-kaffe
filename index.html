@@ -8,7 +8,8 @@
     <title>Ideel Kaffe home page</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/burger-menu.css" />
+    <link rel="stylesheet" href="css/burger-menu.css"/>
+    <link rel="stylesheet" href="css/cart.css"/>
 </head>
 
 <body>
@@ -27,7 +28,7 @@
         <div class="nav-right">
             <a class="wholesale" href="../html/wholesale.html">Wholesale</a>
             <a class="account" href="../html/account.html">Account</a>
-            <a class="cart">Cart (0)</a>
+            <a class="cart-icon">Cart (0)</a>
         </div>
         <!-- BURGER MENU START -->
         <div class="hamburger-menu">
@@ -47,6 +48,27 @@
             </ul>
         </div>
         <!-- BURGER MENU END  -->
+        <!-- CART START -->
+        <template class="cart-item-template">
+            <label class="label" for="fid-">NAME</label>
+            <label class="label2" for="fid-">COLLECTION</label>
+            <div class="display-flex"><button class="minus" type="button">-</button>
+            <input type="number" name="NAME-" id="fid-" min="0" max="20" />
+            <button class="plus" type="button">+</button></div>
+            <p class="price-each"><span></span> DKK</p>
+        </template>
+        <!--END cart template-->
+        <aside id="cart" class="cart">
+          <h3>Shopping Cart</h3>
+          <form>
+            <div class="cart-content">
+              <h4>THE CART IS EMPTY</h4>
+            </div>
+            <h4 class="totalPlacement">Total: <span class="cartTotal"> </span> DKK</h4>
+             <button class="checkoutbutton" type="submit"><a href="html/checkout.html">Checkout & Pay</a></button>
+          </form>
+        </aside>
+        <!-- CART END -->
     </nav>
     <section class="banner top-banner">
         <img class="certificate" src="img/certificate.svg" alt="Home compostable capsules - organic coffee" />
@@ -177,6 +199,7 @@
         </div>
         <a class="to-top" href="#global-nav">Back to top</a>
     </footer>
+    <script src="javascript/cart.js"></script>
 </body>
 
 </html>
