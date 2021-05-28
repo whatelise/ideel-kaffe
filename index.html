@@ -1,170 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ideel Kaffe home page</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/index.css" />
-  </head>
+    <link rel="stylesheet" href="css/burger-menu.css" />
+</head>
 
-  <body>
+<body>
     <nav id="global-nav">
-      <div class="nav-left">
-        <a href="../index.html">Home</a>
-        <a href="../html/productlist.html">Shop</a>
-        <a href="../html/productview.html">Coffee Subscription</a>
-        <a href="../html/about.html">About</a>
-      </div>
-      <div class="logo-container">
-        <a href="">
-          <img class="logo" src="img/logo.svg" alt="Ideel Kaffe logo" />
-        </a>
-      </div>
-      <div class="nav-right">
-        <a href="../html/wholesale.html">Wholesale</a>
-        <a href="../html/account.html">Account</a>
-        <a>Cart</a>
-      </div>
+        <div class="nav-left">
+            <a href="../index.html">Home</a>
+            <a href="../html/productlist.html">Shop</a>
+            <a href="../html/productview.html">Coffee Subscription</a>
+            <a href="../html/about.html">About</a>
+        </div>
+        <div class="logo-container">
+            <a href="">
+                <img class="logo top-logo" src="img/logo.svg" alt="Ideel Kaffe logo" />
+            </a>
+        </div>
+        <div class="nav-right">
+            <a class="wholesale" href="../html/wholesale.html">Wholesale</a>
+            <a class="account" href="../html/account.html">Account</a>
+            <a class="cart">Cart (0)</a>
+        </div>
+        <!-- BURGER MENU START -->
+        <div class="hamburger-menu">
+
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+                <span></span>
+            </label>
+
+            <ul class="menu__box">
+                <li><a class="menu__item" href="#">Home</a></li>
+                <li><a class="menu__item" href="#">Shop</a></li>
+                <li><a class="menu__item" href="#">Coffee Subscription</a></li>
+                <li><a class="menu__item" href="#">About</a></li>
+                <li><a class="menu__item" href="#">Wholesale</a></li>
+                <li><a class="menu__item" href="#">Account</a></li>
+            </ul>
+        </div>
+        <!-- BURGER MENU END  -->
     </nav>
-    <section class="banner">
-      <img
-        class="certificate"
-        src="img/certificate.svg"
-        alt="Home compostable capsules - organic coffee"
-      />
-      <img src="img/homepage-coffee.jpg" alt="Coffee cup on bed" />
-      <div class="banner-text">
-        <h1>Home-compostable Capsules, Nespresso compatible!</h1>
-        <a href="../html/productlist.html">Shop now </a>
-      </div>
+    <section class="banner top-banner">
+        <img class="certificate" src="img/certificate.svg" alt="Home compostable capsules - organic coffee" />
+        <img src="img/homepage-coffee.jpg" alt="Coffee cup on bed" />
+        <div class="banner-text">
+            <h1>Home-compostable Capsules, Nespresso compatible!</h1>
+            <a href="../html/productlist.html">Shop now </a>
+        </div>
     </section>
     <section class="usp-container">
-      <div class="usp">
-        <img class="vector" src="img/Vector.svg" alt="" />
-        <h2>Home compostable</h2>
-        <p>
-          Lorem ipsum dolor amet brooklyn commodo labo laboris air plant in
-          chartreuse ut nulla normcore
-        </p>
-        <a href="">Read more</a>
-      </div>
-      <div class="usp">
-        <img class="vector" alt="" src="img/Vector-1.svg" alt="" />
-        <h2>Organic</h2>
-        <p>
-          Lorem ipsum dolor amet brooklyn commodo labo laboris air plant in
-          chartreuse ut nulla normcore
-        </p>
-        <a href="">Read more</a>
-      </div>
-      <div class="usp">
-        <img class="vector" src="img/Vector-2.svg" alt="" />
-        <h2>Social Impact</h2>
-        <p>
-          Lorem ipsum dolor amet brooklyn commodo labo laboris air plant in
-          chartreuse ut nulla normcore
-        </p>
-        <a href="">Read more</a>
-      </div>
+        <div class="usp">
+            <img class="vector" src="img/Vector.svg" alt="" />
+            <h2>Home compostable</h2>
+            <p>
+                Lorem ipsum dolor amet brooklyn commodo labo laboris air plant in
+                chartreuse ut nulla normcore
+            </p>
+            <a href="">Read more</a>
+        </div>
+        <div class="usp">
+            <img class="vector" alt="" src="img/Vector-1.svg" alt="" />
+            <h2>Organic</h2>
+            <p>
+                Lorem ipsum dolor amet brooklyn commodo labo laboris air plant in
+                chartreuse ut nulla normcore
+            </p>
+            <a href="">Read more</a>
+        </div>
+        <div class="usp">
+            <img class="vector" src="img/Vector-2.svg" alt="" />
+            <h2>Social Impact</h2>
+            <p>
+                Lorem ipsum dolor amet brooklyn commodo labo laboris air plant in
+                chartreuse ut nulla normcore
+            </p>
+            <a href="">Read more</a>
+        </div>
     </section>
     <section class="product-banner">
-      <h1>Home-compostable Capsules</h1>
-      <h2>Organic coffee - Nespresso compatibile</h2>
-      <div class="product-display">
-        <div class="product-container">
-          <h3>10 capsules</h3>
-          <h3>Nespresso Compatible</h3>
-          <img src="img/sample-product.jpg" alt="" />
-          <h2>Name of product</h2>
-          <h3>Sidama / Jimma</h3>
-          <h2>39.00 DKK</h2>
+        <h1>Home-compostable Capsules</h1>
+        <h2>Organic coffee - Nespresso compatibile</h2>
+        <div class="product-display">
+            <div class="product-container">
+                <h3>10 capsules</h3>
+                <h3>Nespresso Compatible</h3>
+                <img src="img/sample-product.jpg" alt="" />
+                <h2>Name of product</h2>
+                <h3>Sidama / Jimma</h3>
+                <h2>39.00 DKK</h2>
+            </div>
+            <div class="product-container">
+                <h3>10 capsules</h3>
+                <h3>Nespresso Compatible</h3>
+                <img src="img/sample-product.jpg" alt="" />
+                <h2>Name of product</h2>
+                <h3>Sidama / Jimma</h3>
+                <h2>39.00 DKK</h2>
+            </div>
+            <div class="product-container">
+                <h3>10 capsules</h3>
+                <h3>Nespresso Compatible</h3>
+                <img src="img/sample-product.jpg" alt="" />
+                <h2>Name of product</h2>
+                <h3>Sidama / Jimma</h3>
+                <h2>39.00 DKK</h2>
+            </div>
         </div>
-        <div class="product-container">
-          <h3>10 capsules</h3>
-          <h3>Nespresso Compatible</h3>
-          <img src="img/sample-product.jpg" alt="" />
-          <h2>Name of product</h2>
-          <h3>Sidama / Jimma</h3>
-          <h2>39.00 DKK</h2>
-        </div>
-        <div class="product-container">
-          <h3>10 capsules</h3>
-          <h3>Nespresso Compatible</h3>
-          <img src="img/sample-product.jpg" alt="" />
-          <h2>Name of product</h2>
-          <h3>Sidama / Jimma</h3>
-          <h2>39.00 DKK</h2>
-        </div>
-      </div>
-      <button>See all products</button>
+        <button>See all products</button>
     </section>
     <section class="banner suflower-banner">
-      <img src="img/sunflower.jpg" alt="sunflower" />
-      <div class="banner-text">
-        <h1>Our coffee capsule goes in the green bin!</h1>
-        <h2>
-          Our Nespresso compatible capsule are made by sunflower seed-shells
-          left overs.
-        </h2>
-        <a href="">Discover more</a>
-      </div>
+        <img src="img/sunflower.jpg" alt="sunflower" />
+        <div class="banner-text">
+            <h1>Our coffee capsule goes in the green bin!</h1>
+            <h2>
+                Our Nespresso compatible capsule are made by sunflower seed-shells
+                left overs.
+            </h2>
+            <a href="">Discover more</a>
+        </div>
     </section>
     <section class="subscribe-banner">
-      <div class="sub-1">Become</div>
-      <div class="sub-2">a coffee</div>
-      <div class="sub-3">subscriber</div>
-      <div class="sub-4">today!</div>
-      <h2>
-        Subscribe and get our HOME-compostable coffee CAPSULES for Nespresso®
-        machines - delivered directly at your doorstep!
-      </h2>
-      <button class="button-white">Subscribe now</button>
+        <div class="sub-1">Become</div>
+        <div class="sub-2">a coffee</div>
+        <div class="sub-3">subscriber</div>
+        <div class="sub-4">today!</div>
+        <h2>
+            Subscribe and get our HOME-compostable coffee CAPSULES for Nespresso®
+            machines - delivered directly at your doorstep!
+        </h2>
+        <button class="button-white">Subscribe now</button>
     </section>
     <section class="banner farmer-banner">
-      <img src="img/field-worker.jpg" alt="Coffee cup on bed" />
-      <div class="banner-text">
-        <h1>You leave a positive footprint on the world</h1>
-        <h2>
-          Each cup of coffee secures school uniforms, quality education and job
-          creating projects in Ethiopia.
-        </h2>
-        <a href="">Shop now </a>
-      </div>
+        <img src="img/field-worker.jpg" alt="Coffee cup on bed" />
+        <div class="banner-text">
+            <h1>You leave a positive footprint on the world</h1>
+            <h2>
+                Each cup of coffee secures school uniforms, quality education and job
+                creating projects in Ethiopia.
+            </h2>
+            <a href="">Shop now </a>
+        </div>
     </section>
     <footer>
-      <div class="footer-container">
-        <div class="logo">
-          <img src="img/logo-black.svg" alt="Ideel Kaffe black logo" />
+        <div class="footer-container">
+            <div class="logo footer-logo">
+                <img src="img/logo-black.svg" alt="Ideel Kaffe black logo" />
+            </div>
+            <form>
+                <label for="email">Subscribe to stay updated!</label>
+                <div class="form-container">
+                    <input type="email" id="fname" name="fname" placeholder="name@gmail.com" />
+                    <input type="submit" value="Submit" />
+                </div>
+            </form>
+            <ul class="socials">
+                <a href="https://www.instagram.com/ideel_kaffe/?hl=en">Instagram</a>
+                <a href="https://www.facebook.com/ideelkaffe">Facebook</a>
+                <a href="https://www.linkedin.com/company/ideel-kaffe/">Linkedin</a>
+            </ul>
+            <ul class="important-links">
+                <a href="../html/contact.html">Contact</a>
+                <a href="../html/privacypolicy.html">Privacy Policy</a>
+                <a href="../html/shipping.html">Shipping</a>
+                <a href="../cookiepolicy.html">Cookie Policy</a>
+                <a href="../html/subscription.html">Subscriptions</a>
+                <a href="../html/wholesale.html">Wholesale</a>
+            </ul>
         </div>
-        <form>
-          <label for="email">Subscribe to stay updated!</label>
-          <div class="form-container">
-            <input
-              type="email"
-              id="fname"
-              name="fname"
-              placeholder="name@gmail.com"
-            />
-            <input type="submit" value="Submit" />
-          </div>
-        </form>
-        <ul class="socials">
-          <a href="https://www.instagram.com/ideel_kaffe/?hl=en">Instagram</a>
-          <a href="https://www.facebook.com/ideelkaffe">Facebook</a>
-          <a href="https://www.linkedin.com/company/ideel-kaffe/">Linkedin</a>
-        </ul>
-        <ul class="important-links">
-          <a href="../html/contact.html">Contact</a>
-          <a href="../html/privacypolicy.html">Privacy Policy</a>
-          <a href="../html/shipping.html">Shipping</a>
-          <a href="../cookiepolicy.html">Cookie Policy</a>
-          <a href="../html/subscription.html">Subscriptions</a>
-          <a href="../html/wholesale.html">Wholesale</a>
-        </ul>
-      </div>
-      <a class="to-top" href="#global-nav">Back to top</a>
+        <a class="to-top" href="#global-nav">Back to top</a>
     </footer>
-  </body>
+</body>
+
 </html>
