@@ -120,7 +120,7 @@ footer {display: grid;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-column-gap: 0vw;
-  padding: 3em 6vw;
+  padding: 3em 5vw;
   font-size: 0.6;
 }
 
@@ -178,29 +178,10 @@ input[type="submit"] {
 
 @media screen and (max-width: 699px) {
 
-  .footer-logo {width:100%;}
-
-
-  .footer-container {
-    display: grid;
-    grid-template-columns: repeat(1, 20% 1fr);
-    width: 100vw;
-  }
-
-/*   .footer-logo, .form { width: 100%};
-
-  .socials,
-.important-links { flex: auto;
-  margin-left: 0em;
-;
-} */
-
 .to-top {
   width: 100%
 
 }
-
-
 
   #global-nav {
     position: fixed;
@@ -216,10 +197,6 @@ input[type="submit"] {
     font-size:1.2em;
   }  
 
-
-  .logo {
-    width: 2em;
-  }
   .nav-left,
   .wholesale,
   .account {
@@ -246,4 +223,34 @@ input[type="submit"] {
   .menu__btn {
     margin-right: 1em;
   }
+
+
+  
+  .footer-container {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+.footer-logo img {
+  width: 4em;
+position: absolute;
+bottom: 1em;
+left: 10vw;}
+
+  form {
+   min-width:100%;
+   margin-bottom: 2em;
+  }
+
+  .socials, .important-links {
+    width: 40%;
+    margin-bottom: 2em;
+    margin-left: 0vw}
 }
