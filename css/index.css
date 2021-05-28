@@ -100,7 +100,7 @@ button {
   background-color: var(--orange);
   color: var(--white);
   padding: 8em 20vw;
-  mix-blend-mode: difference;
+ /*  mix-blend-mode: difference; */
 }
 
 .subscribe-banner > * {

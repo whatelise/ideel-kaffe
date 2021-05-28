@@ -1,17 +1,18 @@
-window.onscroll = function() {scrollCart()};
+
+window.onscroll = function() {myFunction()};
 
 
-var stickyCart = document.getElementById("cart");
+var cart = document.getElementById("cart");
 
 
-var stickyCart = stickyCart.offsetTop;
+var sticky = cart.offsetTop;
 
 
-function scrollCart() {
-  if (window.pageYOffset >= stickyCart.offsetTop) {
-    stickyCart.classList.add("sticky")
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    cart.classList.add("sticky")
   } else {
-    stickyCart.classList.remove("sticky");
+    cart.classList.remove("sticky");
   }
 }
   
