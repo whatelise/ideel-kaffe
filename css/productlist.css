@@ -1,6 +1,13 @@
 main {
   background-color: var(--cream);
 }
+.breadcrumbs {
+  font-weight: 400;
+  padding: 2em 2em;
+}
+.breadcrumbs > * {
+  padding: 0.8em;
+}
 
 .center-header {
   text-align: center;
@@ -50,7 +57,6 @@ button {
 }
 
 .productImage {
-  max-width: 100%;
   padding-top: 1vw;
   padding-bottom: 2vw;
 }
@@ -76,10 +82,48 @@ button {
   padding-top: 1em;
   padding-bottom: 1.5em;
 }
-.breadcrumbs {
-  font-weight: 400;
-  padding: 2em 2em;
+
+.image-container {
+  position: relative;
+  width: 100%;
 }
-.breadcrumbs > * {
-  padding: 0.8em;
+.overlay {
+  background-color: var(--blue);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 94%;
+  width: 100%;
+  opacity: 0;
+  background-color: var(--blue);
+}
+.button-white {
+  color: var(--white);
+  border: 1px solid var(--white);
+  background-color: transparent;
+  text-transform: uppercase;
+  padding: 1em;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.description {
+  color: var(--white);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }

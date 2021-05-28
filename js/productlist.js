@@ -27,13 +27,16 @@ function showProducts(products) {
     const copy = template.cloneNode(true);
     copy.querySelector(".name").textContent = product.name;
     copy.querySelector(".origin").textContent = product.origin;
+    copy.querySelector(".description").textContent = product.description;
     copy.querySelector(".productImage").src = product.productimage;
     copy.querySelector(".productImage").alt = product.name + "product image";
 
-    // const intensity = product.intensity;
-    // const div = document.createElement("div") * intensity;
-    // div.style.background = "#FF663E";
-    // copy.querySelector(".rating").appendChild(div);
+    const intensity = product.intensity;
+    const div = document.createElement("div") * intensity;
+    (div) => {
+      style.color = "#FF663E";
+      copy.querySelector(".rating").appendChild(div);
+    };
 
     copy.querySelector(".price").textContent = product.price + ".00 DKK";
     // copy.querySelector(".shop-button").setAttribute("data-id", product._id);
