@@ -33,6 +33,8 @@
   cursor: pointer;
   z-index: 1;
   user-select: none; 
+  
+align-items: flex-end
 }
 
 .menu__btn > span,
