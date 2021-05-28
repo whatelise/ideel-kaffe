@@ -1,4 +1,19 @@
-  
+window.onscroll = function() {scrollCart()};
+
+
+var stickyCart = document.getElementById("cart");
+
+
+var stickyCart = stickyCart.offsetTop;
+
+
+function scrollCart() {
+  if (window.pageYOffset >= stickyCart.offsetTop) {
+    stickyCart.classList.add("sticky")
+  } else {
+    stickyCart.classList.remove("sticky");
+  }
+}
   
 window.addEventListener("load", hideCart);
 
@@ -168,16 +183,3 @@ for (let index = 0; index < CART.contents.length; index +=1);{
 
 
 CART.init();
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-Loading complete

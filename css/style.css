@@ -31,6 +31,7 @@ nav {
   background-color: var(--orange);
   padding: 0.8em 1em;
   color: var(--white);
+  user-select: none; 
 }
 
 h1,
@@ -211,7 +212,7 @@ input[type="submit"] {
     order: 2;
   }
 
-  .cart {
+  .cart1 {
     order: 1;
     padding-left: 1em;
   }
