@@ -1,0 +1,143 @@
+
+
+
+.cart {
+    display: block;
+    position: absolute;
+    top: 4.2em;
+    right: 0;
+    width: 35vw;
+    height: 100%;
+    margin: 0;
+    list-style: none;
+    background-color: var(--cream);
+    transition-duration: .3s;
+    color: var(--black);
+    z-index: 99;
+    
+    
+}  
+
+.x {
+ height: 0.5em;
+    width: 0.5em; 
+    position: absolute;
+    float: right;
+    top: 0.2em;
+     right: 3em
+      }
+
+.x:after {
+    font-size:3.2em;
+    width:100%;
+    content: '\d7';
+    color: var(--white);
+   
+}
+
+
+.cart-top {
+    color: var(--white);
+    padding: 2em;
+    background-color: var(--dark-green);
+    width: 100%
+  }
+
+  .cart h2 {
+    position: absolute;
+    float: right;
+    top: 1.5em;
+    left: 2em
+  }
+
+.cart-content h4, .checkoutbutton {
+    text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    transition-duration: 0s;
+  }
+  
+
+.cart-product-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 2em;
+
+}
+
+.cart-product-container >* {
+    padding-left:2em; 
+}
+
+.cart-product-img-container {
+    background-color: var(--pink);
+    height: 8em;
+    width: 8em;
+}
+  
+  .cart form {s
+    display: block;
+  }
+  .cart input {
+    font-size: 1em;
+    font-weight: 500;
+    width: 20px;
+    border-bottom: none;
+  }
+  input[type="number"] {
+    -moz-appearance: textfield;
+    text-align: center;
+    border: none;
+    color: var(--white);
+    background-color: var(--orange);
+  }
+  input::-webkit-inner-spin-button,
+  input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  .cart label {
+    font-size: 1.2em;
+    font-weight: 600;
+  }
+  .cart button {
+    font-size: 1em;
+    border: none;
+  }
+  .cart button:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+  }
+  .display-flex {
+    display: flex;
+  }
+
+  .display-flex >* {
+      width: 100%;;
+  }
+
+  .cart .price-each {
+    margin-top: 0;
+    padding-bottom: 15px;
+  }
+  .cart .label2 {
+    margin-top: 10px;
+    font-size: 1em;
+    display: block;
+    text-transform: capitalize;
+    font-weight: 400;
+  }
+  .checkoutbutton a:hover {
+    color: white;
+  }
+
+  .hidden {
+    right: -40%;
+   }

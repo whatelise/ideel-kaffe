@@ -7,6 +7,8 @@
 
 html {
   scroll-behavior: smooth;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 img {
@@ -31,11 +33,11 @@ nav {
   background-color: var(--orange);
   padding: 0.8em 1em;
   color: var(--white);
+  user-select: none; 
 }
 
 h1,
 h2,
-h6,
 button {
   font-family: "IBM Plex Mono", monospace;
 }
@@ -43,7 +45,8 @@ button {
 a,
 p,
 h3,
-form {
+form,
+.menu__item {
   font-family: "IBM Plex Sans", sans-serif;
 }
 
@@ -123,8 +126,7 @@ button {
   justify-content: center;
 }
 
-footer {
-  display: grid;
+footer {display: grid;
   background-color: var(--cream);
   mix-blend-mode: luminosity;
 }
@@ -133,7 +135,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-column-gap: 0vw;
-  padding: 3em 6vw;
+  padding: 3em 5vw;
   font-size: 0.6;
 }
 
@@ -164,9 +166,10 @@ input[type="submit"] {
 }
 
 .socials,
-.important-links {
+.important-links {display: flex;
+  flex-direction: column;
   margin-left: 10vw;
-  display: inline-block;
+
 }
 
 .to-top {
@@ -175,4 +178,94 @@ input[type="submit"] {
   color: var(--orange);
   padding-bottom: 2em;
   text-transform: uppercase;
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 700px) {
+  .hamburger-menu {
+   display: none;
+  }
+}
+
+
+/* MOBILE */
+
+@media screen and (max-width: 699px) {
+
+.to-top {
+  width: 100%
+
+}
+
+  #global-nav {
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+  }
+
+ .top-banner {
+   padding-top:4em
+ }
+
+ a {
+    font-size:1.2em;
+  }  
+
+  .nav-left,
+  .wholesale,
+  .account {
+    display: none;
+  }
+
+  .nav-right {
+    justify-content:left;
+  }
+
+  .logo-container {
+    order: 2;
+  }
+
+  .cart1 {
+    order: 1;
+    padding-left: 1em;
+  }
+
+  .hamburger-menu {
+    order: 3;
+  }
+
+  .menu__btn {
+    margin-right: 1em;
+  }
+
+
+  
+  .footer-container {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+.footer-logo img {
+  width: 4em;
+position: absolute;
+bottom: 1em;
+left: 10vw;}
+
+  form {
+   min-width:100%;
+   margin-bottom: 2em;
+  }
+
+  .socials, .important-links {
+    width: 40%;
+    margin-bottom: 2em;
+    margin-left: 0vw}
 }
