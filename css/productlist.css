@@ -31,8 +31,8 @@ main {
   margin-top: 1.2em;
 }
 
-.suflower-banner {
-  background-color: var(--pink);
+.subscription-banner {
+  background-color: var(--caramel);
   color: var(--white);
 }
 
@@ -104,9 +104,9 @@ button {
   border: 1px solid var(--white);
   background-color: transparent;
   text-transform: uppercase;
-  padding: 1em;
+  padding: 2em 6em;
   position: absolute;
-  top: 70%;
+  top: 80%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -120,10 +120,28 @@ button {
 .description {
   color: var(--white);
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.shipping-banner {
+  display: flex;
+  background-color: var(--orange);
+  align-items: center;
+  padding: 1em;
+  justify-content: center;
+}
+.shipping-banner > * {
+  justify-items: center;
+  color: var(--white);
+  text-decoration: underline;
+}
+.shipbox-img {
+  width: 80px;
+  height: auto;
+  padding-right: 2em;
 }
