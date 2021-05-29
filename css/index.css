@@ -126,18 +126,18 @@ button {
 .sub-2 {
   position: absolute;
   right: 10vw;
-  top: 1em;
+  top: 1.5em;
 }
 
 .sub-3 {
   position: absolute;
-  left: 15vw;
-  bottom: 1.6em;
+  left: 8vw;
+  bottom: 0em;
 }
 
 .sub-4 {
   position: absolute;
-  right: 20vw;
+  right: 10vw;
   bottom: 0.6em;
 }
 
