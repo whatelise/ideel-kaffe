@@ -18,9 +18,49 @@
     
 }  
 
+.x {
+ height: 0.5em;
+    width: 0.5em; 
+    position: absolute;
+    float: right;
+    top: 0.2em;
+     right: 3em
+      }
+
+.x:after {
+    font-size:3.2em;
+    width:100%;
+    content: '\d7';
+    color: var(--white);
+   
+}
+
+
+.cart-top {
+    color: var(--white);
+    padding: 2em;
+    background-color: var(--dark-green);
+    width: 100%
+  }
+
+  .cart h2 {
+    position: absolute;
+    float: right;
+    top: 1.5em;
+    left: 2em
+  }
+
+.cart-content h4, .checkoutbutton {
+    text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .sticky {
     position: fixed;
     top: 0;
+    transition-duration: 0s;
   }
   
 
@@ -40,12 +80,8 @@
     height: 8em;
     width: 8em;
 }
-  .cart h2 {
-    color: var(--white);
-    padding: 2em;
-    background-color: var(--dark-green);
-  }
-  .cart form {
+ 
+  .cart form {s
     display: block;
   }
   .cart input {
@@ -103,6 +139,5 @@
   }
 
   .hidden {
-    right: -100%;
-    width: 100%;
+    right: -40%;
    }

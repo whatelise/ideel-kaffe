@@ -2,7 +2,7 @@
 window.onscroll = function() {myFunction()};
 
 
-var cart = document.getElementById("cart");
+var navbar = document.getElementById("cart");
 
 
 var sticky = cart.offsetTop;
@@ -30,6 +30,7 @@ function showCart() {
   this.removeEventListener("click", showCart);
   document.querySelector("#cart").classList.remove("hidden");
   document.querySelector(".cart-icon").addEventListener("click", hideCart);
+  document.querySelector(".x").addEventListener("click", hideCart);
 }
 
 const CART = {
