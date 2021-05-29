@@ -5,10 +5,6 @@
 .breadcrumbs > * {
   padding: 0.8em;
 }
-
-.center-header {
-  text-align: center;
-}
 .banner {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -31,26 +27,6 @@
 .subscription-banner {
   background-color: var(--caramel);
   color: var(--white);
-}
-
-.farmer-banner {
-  background-color: var(--light-green);
-}
-
-.product-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 10vw;
-  padding: 3em 10vw 8em 10vw;
-}
-
-.product-container > * {
-  padding-bottom: 0.2em;
-  text-align: center;
-}
-
-button {
-  text-align: center;
 }
 
 .productImage {
@@ -84,18 +60,7 @@ button {
   position: relative;
   width: 100%;
 }
-.overlay {
-  background-color: var(--blue);
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 94%;
-  width: 100%;
-  opacity: 0;
-  background-color: var(--blue);
-}
+
 .button-white {
   color: var(--white);
   border: 1px solid var(--white);
@@ -108,21 +73,6 @@ button {
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-}
-
-.image-container:hover .overlay {
-  opacity: 1;
-}
-
-.description {
-  color: var(--white);
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
 }
 
 .shipping-banner {
