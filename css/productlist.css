@@ -64,9 +64,17 @@ button {
 .rating {
   display: flex;
 }
-.circle {
+.circleEmpty {
   height: 20px;
   width: 20px;
+  border: 1px solid var(--orange);
+  border-radius: 50px;
+  margin-left: 50px;
+}
+.circleFull {
+  height: 20px;
+  width: 20px;
+  background-color: var(--orange);
   border: 1px solid var(--orange);
   border-radius: 50px;
   margin-left: 50px;
