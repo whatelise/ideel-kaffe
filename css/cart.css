@@ -64,23 +64,23 @@
   }
   
 
-.product-container {
+.cart-product-container {
     display: grid;
     grid-template-columns: 1fr 2fr;
     padding: 2em;
 
 }
 
-.product-container >* {
+.cart-product-container >* {
     padding-left:2em; 
 }
 
-.product-img-container {
+.cart-product-img-container {
     background-color: var(--pink);
     height: 8em;
     width: 8em;
 }
- 
+  
   .cart form {s
     display: block;
   }
