@@ -1,7 +1,6 @@
 .banner {
   display: grid;
   grid-template-columns: 1fr 1fr;
-
   background-color: var(--cream);
 }
 
@@ -80,6 +79,10 @@
   margin: 3rem;
 }
 
+article > * {
+  margin-bottom: 1rem;
+}
+
 /* MOBILE */
 
 @media screen and (max-width: 699px) {
@@ -87,17 +90,28 @@
     display: none;
   }
 
+  .banner-text > * {
+    margin: 2rem;
+  }
+
   .top-banner {
     display: flex;
-    background-image: url(../img/homepage-coffee-mobile.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    color: white;
     margin: 0;
-    height: 100vh;
+  }
+
+  .pink {
+    background-color: var(--pink);
   }
 
   h2 {
     font-size: 0.8em;
+  }
+
+  .magazine {
+    padding: 2em;
+  }
+
+  .team-text {
+    margin: 0;
   }
 }
