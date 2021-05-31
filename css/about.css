@@ -1,0 +1,103 @@
+.banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  background-color: var(--cream);
+}
+
+.certificate {
+  position: fixed;
+  right: 3em;
+  bottom: 4em;
+  width: 6.5em;
+}
+
+.banner-text > * {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  margin: 2em 6vw;
+}
+
+.banner-img {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.banner-text h2 {
+  color: var(--orange);
+}
+.ok-compost {
+  width: 8rem;
+  height: 4rem;
+}
+
+.banner-text a {
+  text-decoration: underline;
+  margin-top: 1.2em;
+}
+
+.pack-certificates {
+  display: flex;
+  flex-direction: row;
+}
+
+.pack-certificates img {
+  margin-right: 10px;
+}
+
+.banner-team {
+  background-color: var(--blue);
+  color: var(--white);
+  text-align: center;
+  padding: 6rem;
+}
+
+.banner-team img {
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+}
+
+.team-text {
+  margin: 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 6rem;
+}
+
+.magazine {
+  background-color: var(--pink);
+  color: var(--black);
+  text-align: center;
+  padding: 6rem;
+}
+
+.magazine-articles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 6rem;
+  margin: 3rem;
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 699px) {
+  .banner img {
+    display: none;
+  }
+
+  .top-banner {
+    display: flex;
+    background-image: url(../img/homepage-coffee-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    margin: 0;
+    height: 100vh;
+  }
+
+  h2 {
+    font-size: 0.8em;
+  }
+}

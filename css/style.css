@@ -33,7 +33,7 @@ nav {
   background-color: var(--orange);
   padding: 0.8em 1em;
   color: var(--white);
-  user-select: none; 
+  user-select: none;
 }
 
 h1,
@@ -74,7 +74,7 @@ h6 {
 p {
   font-size: 0.8em;
   font-weight: 200;
-  line-height: 1.2em;
+  line-height: 1.5em;
 }
 
 a {
@@ -121,12 +121,13 @@ button {
 }
 
 .logo {
-  width: 3em;
+  width: 5em;
   text-align: center;
   justify-content: center;
 }
 
-footer {display: grid;
+footer {
+  display: grid;
   background-color: var(--cream);
   mix-blend-mode: luminosity;
 }
@@ -166,10 +167,10 @@ input[type="submit"] {
 }
 
 .socials,
-.important-links {display: flex;
+.important-links {
+  display: flex;
   flex-direction: column;
   margin-left: 10vw;
-
 }
 
 .to-top {
@@ -184,19 +185,16 @@ input[type="submit"] {
 
 @media screen and (min-width: 700px) {
   .hamburger-menu {
-   display: none;
+    display: none;
   }
 }
-
 
 /* MOBILE */
 
 @media screen and (max-width: 699px) {
-
-.to-top {
-  width: 100%
-
-}
+  .to-top {
+    width: 100%;
+  }
 
   #global-nav {
     position: fixed;
@@ -204,13 +202,13 @@ input[type="submit"] {
     z-index: 99;
   }
 
- .top-banner {
-   padding-top:4em
- }
+  .top-banner {
+    padding-top: 4em;
+  }
 
- a {
-    font-size:1.2em;
-  }  
+  a {
+    font-size: 1.2em;
+  }
 
   .nav-left,
   .wholesale,
@@ -219,7 +217,7 @@ input[type="submit"] {
   }
 
   .nav-right {
-    justify-content:left;
+    justify-content: left;
   }
 
   .logo-container {
@@ -239,8 +237,6 @@ input[type="submit"] {
     margin-right: 1em;
   }
 
-
-  
   .footer-container {
     display: flex;
     position: relative;
@@ -253,19 +249,22 @@ input[type="submit"] {
     padding-left: 10vw;
     padding-right: 10vw;
   }
-.footer-logo img {
-  width: 4em;
-position: absolute;
-bottom: 1em;
-left: 10vw;}
-
-  form {
-   min-width:100%;
-   margin-bottom: 2em;
+  .footer-logo img {
+    width: 4em;
+    position: absolute;
+    bottom: 1em;
+    left: 10vw;
   }
 
-  .socials, .important-links {
+  form {
+    min-width: 100%;
+    margin-bottom: 2em;
+  }
+
+  .socials,
+  .important-links {
     width: 40%;
     margin-bottom: 2em;
-    margin-left: 0vw}
+    margin-left: 0vw;
+  }
 }
