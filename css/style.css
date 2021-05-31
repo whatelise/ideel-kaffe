@@ -135,7 +135,7 @@ footer {display: grid;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-column-gap: 0vw;
-  padding: 3em 5vw;
+  padding: 4em 5vw;
   font-size: 0.6;
 }
 
@@ -165,6 +165,14 @@ input[type="submit"] {
   text-transform: uppercase;
 }
 
+.submit-confirm {
+  display:none;
+}
+
+form p {
+  padding-top: 1em;
+}
+
 .socials,
 .important-links {display: flex;
   flex-direction: column;
@@ -177,8 +185,10 @@ input[type="submit"] {
   font-size: 0.8em;
   color: var(--orange);
   padding-bottom: 2em;
+  padding-top: 7em;
   text-transform: uppercase;
 }
+
 
 /* DESKTOP */
 
@@ -252,6 +262,7 @@ input[type="submit"] {
     width: 100%;
     padding-left: 10vw;
     padding-right: 10vw;
+  
   }
 .footer-logo img {
   width: 4em;
@@ -261,11 +272,11 @@ left: 10vw;}
 
   form {
    min-width:100%;
-   margin-bottom: 2em;
   }
 
   .socials, .important-links {
     width: 40%;
     margin-bottom: 2em;
-    margin-left: 0vw}
+    margin-left: 0vw;
+    margin-top: 2em; }
 }
