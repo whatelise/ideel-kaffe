@@ -63,7 +63,7 @@ align-items: flex-end
   display: block;
   position: fixed;
   visibility: hidden;
-  top: 4em;
+  top: 5em;
   right: -100%;
   width: 100%;
   height: 100%;

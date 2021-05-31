@@ -169,6 +169,17 @@ input[type="submit"] {
   display:none;
 }
 
+
+.error-message {
+  display: none;
+}
+
+input:not(:focus):invalid ~ .error-message {
+  display: block; 
+  color: var(--orange);
+}
+
+
 form p {
   padding-top: 1em;
 }
