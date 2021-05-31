@@ -47,7 +47,7 @@ a,
 p,
 h3,
 form,
-.menu__item {
+.menu__item,  .cart-extra-info {
   font-family: "IBM Plex Sans", sans-serif;
 }
 

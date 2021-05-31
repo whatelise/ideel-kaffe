@@ -49,13 +49,24 @@
     top: 1.5em;
     left: 2em
   }
-
-.cart-content h4, .checkoutbutton {
+  .cart-content h4 {
     text-align: center;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+    padding: 2em;
+  }
+
+  .cart-extra-info {
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark-green);
+    color: var(--white);
+  }
+
+  .cart-extra-info > * {
+
+    padding-bottom: 1em;
+  }
 
 .sticky {
     position: fixed;
