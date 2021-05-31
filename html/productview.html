@@ -31,58 +31,95 @@
       </nav>
     </header>
     <main>
-      <h2 class="breadcrumbs">
-        <a href="../index.html">HOME </a><span>→</span><a> SHOP</a>
-      </h2>
-      <section class="product-view flex">
-        <!-- <template class="productview-template"> -->
-        <div class="product-information1">
-          <h6 class="name">Elene</h6>
-          <p class="origin">Sidama / Jimma</p>
-          <div class="flex intensity">
-            <h2>STRENGTH</h2>
-            <div class="rating">
-              <div id="circle1" class="circleEmpty"></div>
-              <div id="circle2" class="circle"></div>
-              <div id="circle3" class="circle"></div>
-              <div id="circle4" class="circle"></div>
-              <div id="circle5" class="circle"></div>
+      <div class="main">
+        <template class="productview-template">
+          <h2 class="breadcrumbs">
+            <a href="../index.html">HOME </a><span>→</span><a> SHOP</a
+            ><span>→</span><a class="breadcrumbname"> PRODUCT</a>
+          </h2>
+          <section class="product-view">
+            <div class="name-and-origin">
+              <h6 class="name">Elene</h6>
+              <p class="origin">Sidama / Jimma</p>
             </div>
-          </div>
-          <div class="flex intensity">
-            <h2>ACIDITY</h2>
-            <div class="rating">
-              <div class="circle"></div>
-              <div class="circle"></div>
-              <div class="circle"></div>
-              <div class="circle"></div>
-              <div class="circle"></div>
+            <div class="ratings-and-price">
+              <div class="ratingflexbox">
+                <div class="row">
+                  <h2 class="column1">STRENGTH</h2>
+                  <div class="rating">
+                    <div id="strength1" class="circleEmpty"></div>
+                    <div id="strength2" class="circleEmpty"></div>
+                    <div id="strength3" class="circleEmpty"></div>
+                    <div id="strength4" class="circleEmpty"></div>
+                    <div id="strength5" class="circleEmpty"></div>
+                  </div>
+                </div>
+                <div class="row">
+                  <h2 class="column1">ACIDITY</h2>
+                  <div class="rating">
+                    <div id="acidity1" class="circleEmpty"></div>
+                    <div id="acidity2" class="circleEmpty"></div>
+                    <div id="acidity3" class="circleEmpty"></div>
+                    <div id="acidity4" class="circleEmpty"></div>
+                    <div id="acidity5" class="circleEmpty"></div>
+                  </div>
+                </div>
+                <div class="row">
+                  <h2 class="column1">ROAST</h2>
+                  <div class="rating">
+                    <div id="roast1" class="circleEmpty"></div>
+                    <div id="roast2" class="circleEmpty"></div>
+                    <div id="roast3" class="circleEmpty"></div>
+                    <div id="roast4" class="circleEmpty"></div>
+                    <div id="roast5" class="circleEmpty"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex">
+                <h1 class="price strong">39 DKK</h1>
+                <h2 class="per">x 10 NESPRESSO® COMPATIBLE CAPSULES</h2>
+              </div>
+              <button class="button-white">- 1 +</button>
+              <button>ADD TO CART</button>
+              <button>SUBSCRIBE</button>
             </div>
-          </div>
-          <div class="flex intensity">
-            <h2>ROAST</h2>
-            <div class="rating">
-              <div class="circle"></div>
-              <div class="circle"></div>
-              <div class="circle"></div>
-              <div class="circle"></div>
-              <div class="circle"></div>
-            </div>
-          </div>
-          <h1 class="price strong">39.00</h1>
-          <h2>x 10 NESPRESSO® COMPATIBLE CAPSULES</h2>
-          <button class="button-white">DISCOVER</button>
-          <button>ADD TO CART</button>
-          <button>SUBSCRIBE</button>
-        </div>
 
-        <div class="image-container">
-          <img class="productImage" src="../img/sample-product.jpg" alt="" />
-        </div>
-
-        <!-- </template
-        > -->
-      </section>
+            <div class="image-container">
+              <img
+                class="productImage"
+                src="../img/sample-product.jpg"
+                alt=""
+              />
+            </div>
+          </section>
+          <section class="about-wrapper">
+            <div class="left">
+              <h2 class="strong">ABOUT THIS COFFEE</h2>
+              <div class="about-coffee">
+                <div class="row">
+                  <h2 class="column1">VARIETIES</h2>
+                  <p class="varieties">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+                </div>
+                <div class="row">
+                  <h2 class="column1">ORIGIN</h2>
+                  <p class="origin2">Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="row">
+                  <h2 class="column1">PROCESS</h2>
+                  <p class="process">Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="row">
+                  <h2 class="column1">Q-GRADE</h2>
+                  <p class="qgrade">Lorem ipsum dolor sit amet.</p>
+                </div>
+              </div>
+            </div>
+            <img class="map" src="../img/map.svg" />
+          </section>
+        </template>
+      </div>
       <section class="shipping-banner">
         <img class="shipbox-img" src="../img/shipping-box.svg" />
         <h2>
@@ -92,31 +129,34 @@
         </h2>
       </section>
       <section class="banner farmer-banner">
+        <img src="../img/farmer1.png" alt="Man in hat" />
         <div class="banner-text">
-          <h1>You leave a positive footprint on the world</h1>
-          <h2>
-            Each cup of coffee secures school uniforms, quality education and
-            job creating projects in Ethiopia.
-          </h2>
-          <a href="../html/productlist.html">Shop now </a>
+          <h1>Elton</h1>
+          <p>
+            Kieni, a dry mill built up by a cooperative of 1,000 small farmers
+            and managed by Josphat Kariuki. We have worked with this mill since
+            2010.<br />
+            <br />
+            It is undoubtedly one of the best coffees we have tasted in
+            Ethiopia. It gives a unique acidity and intense fruity aroma to our
+            menu.
+          </p>
+          <a href="../html/about.html">Discover More</a>
         </div>
-        <img src="../img/field-worker.jpg" alt="Coffee cup on bed" />
       </section>
-      <section class="banner subscription-banner">
-        <img
-          src="../img/coffeemachine-100.jpg"
-          alt="coffee machine and espresso"
-        />
-        <div class="banner-text">
-          <h1>Coffee<br />Subscription</h1>
-          <h2>
-            Save 15% on your first subscription order when you use the code
-            FIRST_15 at checkout. All subscriptions ship free and you can update
-            or cancel anytime!
-          </h2>
-
-          <a href="../html/subscription.html">Start Now</a>
-        </div>
+      <section class="landfills">
+        <h2>
+          Regular coffee capsule are difficult <br />and expensive to recycle.
+        </h2>
+        <h1>
+          60 billion go to landfill every year <br />and 80% of all pods end up
+          in our ocean
+        </h1>
+        <p>
+          Our home-compostable capsules are 100% compatible, <br />
+          so whereever they end up, they won’t stay there long.
+        </p>
+        <a href="../html/about.html"><button>Read More</button></a>
       </section>
     </main>
     <footer>
@@ -152,6 +192,6 @@
       </div>
       <a class="to-top" href="#global-nav">Back to top</a>
     </footer>
-    <script src="../js/productlist.js"></script>
+    <script src="../js/productview.js"></script>
   </body>
 </html>
