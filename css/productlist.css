@@ -150,3 +150,54 @@ button {
   height: auto;
   padding-right: 2em;
 }
+
+@media screen and (max-width: 799px) {
+  .breadcrumbs {
+    padding: 10em 2em 2em 2em;
+  }
+
+  .product-list {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2em;
+  }
+
+  .circleEmpty {
+    height: 15px;
+    width: 15px;
+    margin-left: 20px;
+  }
+  .circleFull {
+    height: 15px;
+    width: 15px;
+    margin-left: 20px;
+  }
+  .productImage {
+    height: 22em;
+  }
+  .shipping-banner a {
+    font-size: 0.9em;
+  }
+  .price {
+    font-size: 1.8em;
+    padding-top: 0;
+    padding-bottom: 1em;
+  }
+  .flex {
+    justify-content: left;
+  }
+  .about-wrapper {
+    flex-direction: column;
+  }
+  .farmer-banner img {
+    display: none;
+  }
+  .banner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  h2 {
+    font-size: 0.8em;
+  }
+}
