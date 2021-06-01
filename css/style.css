@@ -80,7 +80,8 @@ p {
 a {
   text-decoration: none;
   color: inherit;
-  font-size: 0.9em;
+  font-size: 0.8em;
+  font-weight: 500;
 }
 
 .flex {
@@ -146,7 +147,11 @@ footer {
   padding: 3em 5vw;
   font-size: 0.6;
 }
-
+label {
+  font-family: "IBM Plex Mono";
+  font-size: 0.9;
+  font-weight: 600;
+}
 input[type="email"] {
   background-color: var(--cream);
   border: 1px solid var(--black);
@@ -176,6 +181,8 @@ input[type="submit"] {
   display: flex;
   flex-direction: column;
   margin-left: 10vw;
+  font-weight: 600;
+  line-height: 1.5;
 }
 
 .to-top {
