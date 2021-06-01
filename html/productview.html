@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ideel Kaffe home page</title>
     <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/productview.css" />
+    <link rel="stylesheet" href="../css/productview.css"/>
+    <link rel="stylesheet" href="../css/cart.css"/>
   </head>
 
   <body>
@@ -19,14 +20,14 @@
               <a href="../html/about.html">About</a>
           </div>
           <div class="logo-container">
-              <a href="../index.html">
+              <a href="">
                   <img class="logo top-logo" src="../img/logo.svg" alt="Ideel Kaffe logo" />
               </a>
           </div>
           <div class="nav-right">
               <a class="wholesale" href="../html/wholesale.html">Wholesale</a>
               <a class="account" href="../html/account.html">Account</a>
-              <a class="cart-icon">Cart (0)</a>
+              <a class="cart-icon">Cart (<span class="cart-qty"></span>)</a>
           </div>
           <!-- BURGER MENU START -->
           <div class="hamburger-menu">
@@ -56,7 +57,8 @@
                       <label class="label" for="fid-">NAME</label>
                       <label class="label2" for="fid-">COLLECTION</label>
                       <p class="price-each"><span></span> DKK</p>
-                      <div class="display-flex"><button class="minus" type="button">-</button>
+                      <div class="display-flex">
+                        <button class="minus" type="button">-</button>
                           <input type="number" name="NAME-" id="fid-" min="0" max="20" />
                           <button class="plus" type="button">+</button>
                       </div>
@@ -64,15 +66,17 @@
           </template>
           <!--END cart template-->
           <aside id="cart" class="cart">
-              <div class="cart-top"><h2>Cart(0)</h2>
+              <div class="cart-top"><h2>Cart(<span class="cart-qty"></span>)</h2>
               <div class="x"></div></div>
               <form>
                   <div class="cart-content">
                       <h4>THE CART IS EMPTY</h4>
                   </div>
-                  <h4 class="shipping-info">Shipping & taxes calculated at checkout</h4>
-                  <h4 class="totalPlacement">Total: <span class="cartTotal"> </span> DKK</h4>
-                  <button class="checkoutbutton" type="submit"><a href="html/checkout.html">Checkout & Pay</a></button>
+                  <div class="cart-extra-info">
+                  <p class="shipping-info">Shipping & taxes calculated at checkout</p>
+                  
+                  <button class="checkoutbutton" type="submit"><a href="html/checkout.html">Checkout<p class="totalPlacement">Total: <span class="cartTotal"> </span> DKK</p></a></button>
+              </div>
               </form>
           </aside>
           <!-- CART END -->
@@ -127,8 +131,11 @@
                 <h1 class="price strong">39 DKK</h1>
                 <h2 class="per">x 10 NESPRESSO® COMPATIBLE CAPSULES</h2>
               </div>
-              <button class="button-white">- 1 +</button>
-              <button>ADD TO CART</button>
+              <button data-id="id-"class="button-white">- 1 +</button>
+            <!--    <button data-id="id-" class="add-button">– <span>1</span> +</button> -->
+            <button data-id="id-" class="shop-button">add to cart – 499 DKK</button>
+    
+          </div>
               <button>SUBSCRIBE</button>
             </div>
 
@@ -240,12 +247,7 @@
       </div>
       <a class="to-top" href="#global-nav">Back to top</a>
     </footer>
-<<<<<<< HEAD
-    <script src="../js/productlist.js"></script>
-    <script src="javascript/cart.js"></script>
-
-=======
     <script src="../js/productview.js"></script>
->>>>>>> origin/productview
+    <script src="../js/cart.js"></script>
   </body>
 </html>
