@@ -30,23 +30,63 @@ function showProducts(products) {
     copy.querySelector(".description").textContent = product.description;
     copy.querySelector(".productImage").src = product.productimage;
     copy.querySelector(".productImage").alt = product.name + "product image";
-
-    const intensity = product.intensity;
-    const div = document.createElement("div") * intensity;
-    (div) => {
-      style.color = "#FF663E";
-      copy.querySelector(".rating").appendChild(div);
-    };
-
     copy.querySelector(".price").textContent = product.price + ".00 DKK";
     // copy.querySelector(".shop-button").setAttribute("data-id", product._id);
     // copy.querySelector(".shop-button").addEventListener("click", () => {
     //   CART.add(product);
     // });
 
-    // copy.querySelector(
-    //   ".viewProduct"
-    // ).href = `productview.html?products=${product._id}`;
+    copy.querySelector(
+      ".viewProduct"
+    ).href = `productview.html?products=${product._id}`;
+
+    if (product.intensity == 5) {
+      console.log("product.intensity");
+      copy.querySelector("#intensity1").classList.add("circleFull");
+      copy.querySelector("#intensity1").classList.remove("circleEmpty");
+      copy.querySelector("#intensity2").classList.remove("circleEmpty");
+      copy.querySelector("#intensity2").classList.add("circleFull");
+      copy.querySelector("#intensity3").classList.remove("circleEmpty");
+      copy.querySelector("#intensity3").classList.add("circleFull");
+      copy.querySelector("#intensity4").classList.remove("circleEmpty");
+      copy.querySelector("#intensity4").classList.add("circleFull");
+      copy.querySelector("#intensity5").classList.remove("circleEmpty");
+      copy.querySelector("#intensity5").classList.add("circleFull");
+    }
+    if (product.intensity == 4) {
+      console.log("product.intensity");
+      copy.querySelector("#intensity1").classList.remove("circleEmpty");
+      copy.querySelector("#intensity1").classList.add("circleFull");
+      copy.querySelector("#intensity2").classList.remove("circleEmpty");
+      copy.querySelector("#intensity2").classList.add("circleFull");
+      copy.querySelector("#intensity3").classList.remove("circleEmpty");
+      copy.querySelector("#intensity3").classList.add("circleFull");
+      copy.querySelector("#intensity4").classList.remove("circleEmpty");
+      copy.querySelector("#intensity4").classList.add("circleFull");
+    }
+    if (product.intensity == 3) {
+      console.log("product.intensity");
+      copy.querySelector("#intensity1").classList.remove("circleEmpty");
+      copy.querySelector("#intensity1").classList.add("circleFull");
+      copy.querySelector("#intensity2").classList.remove("circleEmpty");
+      copy.querySelector("#intensity2").classList.add("circleFull");
+      copy.querySelector("#intensity3").classList.remove("circleEmpty");
+      copy.querySelector("#intensity3").classList.add("circleFull");
+    }
+
+    if (product.intensity == 2) {
+      console.log("product.intensity");
+      copy.querySelector("#intensity1").classList.remove("circleEmpty");
+      copy.querySelector("#intensity1").classList.add("circleFull");
+      copy.querySelector("#intensity2").classList.remove("circleEmpty");
+      copy.querySelector("#intensity2").classList.add("circleFull");
+    }
+
+    if (product.intensity == 1) {
+      copy.querySelector("#intensity1").classList.remove("circleEmpty");
+      copy.querySelector("#intensity1").classList.add("circleFull");
+    }
+
     document.querySelector(".product-list").appendChild(copy);
   });
 }

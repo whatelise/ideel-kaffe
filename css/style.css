@@ -34,11 +34,12 @@ nav {
   background-color: var(--orange);
   padding: 0.8em 1em;
   color: var(--white);
-  user-select: none; 
+  user-select: none;
 }
 
 h1,
 h2,
+h6,
 button {
   font-family: "IBM Plex Mono", monospace;
 }
@@ -71,6 +72,7 @@ h3 {
 h6 {
   font-size: 5em;
   font-weight: 1200;
+  color: var(--white);
 }
 p {
   font-size: 0.8em;
@@ -127,7 +129,8 @@ button {
   justify-content: center;
 }
 
-footer {display: grid;
+footer {
+  display: grid;
   background-color: var(--cream);
   mix-blend-mode: luminosity;
 }
@@ -186,10 +189,10 @@ form p {
 }
 
 .socials,
-.important-links {display: flex;
+.important-links {
+  display: flex;
   flex-direction: column;
   margin-left: 10vw;
-
 }
 
 .to-top {
@@ -206,19 +209,16 @@ form p {
 
 @media screen and (min-width: 700px) {
   .hamburger-menu {
-   display: none;
+    display: none;
   }
 }
-
 
 /* MOBILE */
 
 @media screen and (max-width: 699px) {
-
-.to-top {
-  width: 100%
-
-}
+  .to-top {
+    width: 100%;
+  }
 
   #global-nav {
     position: fixed;
@@ -226,13 +226,13 @@ form p {
     z-index: 99;
   }
 
- .top-banner {
-   padding-top:4em
- }
+  .top-banner {
+    padding-top: 4em;
+  }
 
- a {
-    font-size:1.2em;
-  }  
+  a {
+    font-size: 1.2em;
+  }
 
   .nav-left,
   .wholesale,
@@ -241,7 +241,7 @@ form p {
   }
 
   .nav-right {
-    justify-content:left;
+    justify-content: left;
   }
 
   .logo-container {
@@ -261,8 +261,6 @@ form p {
     margin-right: 1em;
   }
 
-
-  
   .footer-container {
     display: flex;
     position: relative;
@@ -276,19 +274,22 @@ form p {
     padding-right: 10vw;
   
   }
-.footer-logo img {
-  width: 4em;
-position: absolute;
-bottom: 1em;
-left: 10vw;}
-
-  form {
-   min-width:100%;
+  .footer-logo img {
+    width: 4em;
+    position: absolute;
+    bottom: 1em;
+    left: 10vw;
   }
 
-  .socials, .important-links {
+  form {
+    min-width: 100%;
+    margin-bottom: 2em;
+  }
+
+  .socials,
+  .important-links {
     width: 40%;
     margin-bottom: 2em;
     margin-left: 0vw;
-    margin-top: 2em; }
+  }
 }
