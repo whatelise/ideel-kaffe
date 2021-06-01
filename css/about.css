@@ -16,7 +16,7 @@
   display: flex;
   flex-direction: column;
   justify-content: top;
-  margin: 2em 6vw;
+  margin: 1.5em 6vw;
 }
 
 .banner-img {
@@ -37,6 +37,10 @@
   margin-top: 1.2em;
 }
 
+article a {
+  text-decoration: underline;
+  margin-top: 1.2em;
+}
 .pack-certificates {
   display: flex;
   flex-direction: row;
@@ -54,15 +58,18 @@
 }
 
 .banner-team img {
-  margin-top: 6rem;
-  margin-bottom: 3rem;
+  margin-top: 4rem;
 }
 
 .team-text {
   margin: 3rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 6rem;
+  grid-gap: 3rem;
+}
+
+.team-member > * {
+  padding-bottom: 1em;
 }
 
 .magazine {
@@ -105,6 +112,10 @@ article > * {
 
   h2 {
     font-size: 0.8em;
+  }
+
+  a {
+    font-size: 0.9em;
   }
 
   .magazine {
