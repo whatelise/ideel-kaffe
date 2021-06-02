@@ -1,0 +1,67 @@
+.banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--cream);
+}
+
+.certificate {
+  position: fixed;
+  right: 3em;
+  bottom: 4em;
+  width: 8em;
+}
+
+.banner-text {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2em 6vw;
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 799px) {
+  .secondary-nav {
+    background-color: var(--cream);
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 9em;
+    padding-bottom: 1em;
+    padding-left: 8vw;
+    padding-right: 8vw;
+  }
+
+  .secondary-nav > * {
+    margin-left: 2em;
+    margin-right: 2em;
+    margin-bottom: 2em;
+    text-align: center;
+  }
+
+  .banner img {
+    display: none;
+  }
+
+  .banner-text > * {
+    margin: 2rem;
+  }
+
+  .top-banner {
+    display: flex;
+    margin: 0;
+  }
+
+  .pink {
+    background-color: var(--pink);
+  }
+
+  h2 {
+    font-size: 0.8em;
+  }
+
+  a {
+    font-size: 0.9em;
+  }
+}
