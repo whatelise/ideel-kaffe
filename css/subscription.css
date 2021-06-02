@@ -1,14 +1,14 @@
-.banner {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  background-color: var(--cream);
-}
-
 .certificate {
   position: fixed;
   right: 3em;
   bottom: 4em;
   width: 8em;
+}
+
+.banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--cream);
 }
 
 .banner-text {
@@ -19,33 +19,80 @@
   align-items: center;
   margin: 2em 6vw;
 }
+.banner-text h2 {
+  color: var(--orange);
+  margin-top: 2em;
+}
+
+.banner-text a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--orange);
+}
+
+#subscription-sec {
+  background-color: var(--blue);
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.step {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+
+.step-number {
+  color: var(--orange);
+}
+.step-title {
+  color: var(--white);
+}
+
+.step-option {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.step-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--cream);
+  margin: 2rem;
+  width: 120px;
+  height: 120px;
+  padding: 2em;
+}
+
+.step-box:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+
+.step-box img {
+  height: 40px;
+  margin-top: 2rem;
+  align-self: center;
+}
+
+.step-box h2 {
+  text-align: center;
+}
 
 /* MOBILE */
 
-@media screen and (max-width: 799px) {
-  .secondary-nav {
-    background-color: var(--cream);
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 9em;
-    padding-bottom: 1em;
-    padding-left: 8vw;
-    padding-right: 8vw;
-  }
-
-  .secondary-nav > * {
-    margin-left: 2em;
-    margin-right: 2em;
-    margin-bottom: 2em;
-    text-align: center;
-  }
-
+@media screen and (max-width: 800px) {
   .banner img {
     display: none;
   }
 
-  .banner-text > * {
+  .banner-text {
     margin: 2rem;
+    padding-top: 3rem;
   }
 
   .top-banner {
@@ -55,6 +102,13 @@
 
   .pink {
     background-color: var(--pink);
+  }
+
+  .step-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   h2 {
