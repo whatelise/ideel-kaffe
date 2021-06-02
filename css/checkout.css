@@ -60,7 +60,7 @@ main {
   }
   
   .firstName {
-    margin-right: 10%;
+    margin-right: 6%;
   }
   
   .fullName {
@@ -95,16 +95,24 @@ main {
    
   }
 
+  .btn-checkout-container {
+    text-align: center;
+    width: 75%;
+  }
+
   .btn {
     text-transform: uppercase;
     color: white;
-    background-color: black;
-    margin-top: 2em;
-    margin-right: 1em;
-    padding: 0.5em;
+    margin: 0.5em; 
+    padding: 1em;
     border: none;
+    
   }
-  
+
+  #prev {
+background-color:var(--fadetext);
+  }
+
   .btn:focus {
     outline: 0;
   }
@@ -114,9 +122,13 @@ main {
   }
   
   .btn:disabled {
-    background-color: lightgray;
+    display: none;
   }
-  
+
+  .btn-checkout {
+    text-align: center;
+  }
+
   section {
     margin-left: 6vw;
     margin-right: 6vw;
@@ -182,6 +194,7 @@ main {
   
   .info {
     overflow: hidden;
+    padding-bottom: 1em;
     transition: 0.4s ease;
   }
   .clickNext {
