@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ideel Kaffe home page</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/about.css" />
+    <link rel="stylesheet" href="../css/burger-menu.css" />
+    <link rel="stylesheet" href="../css/cart.css" />
+</head>
+
+<body>
+    <nav id="global-nav">
+        <div class="nav-left">
+            <a href="../index.html">Home</a>
+            <a href="../html/productlist.html">Shop</a>
+            <a href="../html/productview.html">Coffee Subscription</a>
+            <a href="../html/about.html">About</a>
+        </div>
+        <div class="logo-container">
+            <a href="">
+                <img class="logo top-logo" src="../img/logo.svg" alt="Ideel Kaffe logo" />
+            </a>
+        </div>
+        <div class="nav-right">
+            <a class="wholesale" href="../html/wholesale.html">Wholesale</a>
+            <a class="account" href="../html/account.html">Account</a>
+            <a class="cart-icon">Cart (0)</a>
+        </div>
+        <!-- BURGER MENU START -->
+        <div class="hamburger-menu">
+
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+                <span></span>
+            </label>
+
+            <ul class="menu__box">
+                <li><a class="menu__item" href="#">Home</a></li>
+                <li><a class="menu__item" href="#">Shop</a></li>
+                <li><a class="menu__item" href="#">Coffee Subscription</a></li>
+                <li><a class="menu__item" href="#">About</a></li>
+                <li><a class="menu__item" href="#">Wholesale</a></li>
+                <li><a class="menu__item" href="#">Account</a></li>
+            </ul>
+        </div>
+        <!-- BURGER MENU END  -->
+        <!-- CART START -->
+        <template class="cart-item-template">
+            <div class="cart-product-container">
+                <div class="cart-product-img-container">
+                    <img src="" alt="">
+                </div>
+                <div class="product-info-container">
+                    <label class="label" for="fid-">NAME</label>
+                    <label class="label2" for="fid-">COLLECTION</label>
+                    <p class="price-each"><span></span> DKK</p>
+                    <div class="display-flex"><button class="minus" type="button">-</button>
+                        <input type="number" name="NAME-" id="fid-" min="0" max="20" />
+                        <button class="plus" type="button">+</button>
+                    </div>
+                </div>
+        </template>
+        <!--END cart template-->
+        <aside id="cart" class="cart">
+            <div class="cart-top"><h2>Cart(0)</h2>
+            <div class="x"></div></div>
+            <form>
+                <div class="cart-content">
+                    <h4>THE CART IS EMPTY</h4>
+                </div>
+                <h4 class="shipping-info">Shipping & taxes calculated at checkout</h4>
+                <h4 class="totalPlacement">Total: <span class="cartTotal"> </span> DKK</h4>
+                <button class="checkoutbutton" type="submit"><a href="html/checkout.html">Checkout & Pay</a></button>
+            </form>
+        </aside>
+        <!-- CART END -->
+    </nav>
+    <div class="secondary-nav">
+            <a href="#capsules">THE capsules</a>
+            <a href="#coffee">The coffee</a>
+            <a href="#social">Social impact</a>
+            <a href="#pack">Packaging</a>
+            <a href="#team">Our team</a>
+            <a href="#magazine">Magazine</a>
+    </div>
+    <section class="banner top-banner pink">
+        <img class="certificate" src="../img/certificate.svg" alt="Home compostable capsules - organic coffee" />
+        <div class="banner-text">
+            <h1 id="capsules">The capsules</h1>
+            <h2>NESPRESSO compatible</h2>
+            <p><strong>Our capsules are compatible with all Nespresso coffee machines. </strong>
+                Just pop one in the top and you’re ready to go! Once your coffee’s been poured,
+                 the capsule can go right into your home composting bin. More on that now... </p>
+            <h2>“OK HOME COMPOST” CERTIFICATE</h2>
+            <p>Our capsules perfectly demonstrate a <strong>circular economy</strong>; made from the earth and are returned right back to it. 
+                It’s no surprise they were named  “the most environmentally friendly coffee capsule” by the Nova Institute in Germany.
+                When sunflower oil is created the seed-shells are left as a by-product. 
+                The shells are collected, and a biomass is created, which the capsule is made of. 
+                It has achieved the prestigious <strong>“OK Home Compost” Certificate.</strong> 
+                It means the product <strong>degrades under natural conditions</strong>, even in a garden compost. 
+                Need more convincing? Check out this badge:</p>
+             <img class="ok-compost" src="../img/about_okcompstable-02.png" alt="ok compostable certificate" />
+        </div>
+        <img class="banner-img" src="../img/about_capsules.png" alt="coffee capsule home compostable" />
+    </section>
+
+    <section class="banner top-banner">
+        <div class="banner-text">
+            <h1 id="coffee">The Coffee</h1>
+            <h2>NATURALLY GROWN IN ETHIOPIA</h2>
+            <p>For coffee to be labelled as “specialty” it has to meet special criteria and quality standards, 
+                which is why it usually does not grow in big plantations but smaller batches, in perfect coffee farming environments.
+                Each bean is hand-picked and carefully selected, depending on its age, shape, color etc. 
+                Thanks to south Ethiopia’s perfect climate for growing coffee, there is no need for adding pesticides. 
+                <strong>More than 90% of Ethiopian coffee is grown naturally.</strong></p>
+            <h2>The harvest process</h2>    
+            <p>The coffee is grown and harvested in the highlands, by <strong>small scale farming communities.</strong>
+                This places are so remote they are only accessible by donkeys.
+                Later it is either washed or dried, before being shipped to Copenhagen, where it is roasted.  </p>
+        </div>
+        <img class="banner-img" src="../img/about_coffee.png" alt="organic coffee" />
+    </section>
+
+    <section class="banner top-banner pink">
+        <div class="banner-text">
+            <h1 id="social">The Social impact</h1>
+            <h2>THE FARMERS</h2>
+            <p><strong>We source coffee directly from the farmer </strong>for two main reasons. 
+                To guarantee we get the best green beans, and to make sure the farmer is rewarded for the high quality coffee.
+                We pay 25% more than the average Fair-trade price, 
+                while also investing in long lasting projects developed by the local communities.</p>
+            <h2>PROJECT WITH LOCAL COMMUNITIES</h2>    
+            <p>By drinking our coffee you leave a <strong>footprint on the world.</strong>  
+                Each cup of coffee secures school uniforms, quality education and job creating projects in Ethiopia.  </p>
+                <a href="">Read more</a>
+        </div>
+        <img class="banner-img" src="../img/about_social.png" alt="social impact" />
+    </section>
+
+    <section class="banner top-banner">
+        <div class="banner-text">
+            <h1 id="pack">The packaging</h1>
+            <h2>we are eco-friendly!</h2>
+            <p>Our work in sustainability has been central to us from day one. 
+                It is deeply incorporated in our core values, that we wish to make a change in the world 
+                for the better through our trade with coffee.
+                We focus on offering coffee package made from recyclable and biodegradable materials. </p>
+            <h2>Corporation Certification</h2>    
+            <p>Now, we are proud to announce we have taken the next step and achieved the B Corporation Certification.</p>
+            <div class="pack-certificates">
+                <img class="ok-compost" src="../img/about_fsc-03.svg" alt="ok compostable certificate" />
+                <img class="ok-compost" src="../img/about_bcertificate-04.svg" alt="ok compostable certificate" />
+            </div>
+        </div>
+        <img class="banner-img" src="../img/about_pack.png" alt="social impact" />
+    </section>
+
+    
+    <section class="banner-team">
+        <h1 id="team">Our Team</h1>
+        <h2>We are a young team with big dreams,</br> 
+            on a mission  to minimise waste and make the world a more equal place.
+            </h2>
+            <img src="../img/about_team.jpeg" alt="team portrait" />
+        <div class="team-text">
+            <div class="team-member">
+                <h2>
+                    Johan
+                </h2>
+                <p> I'm originally from Finland, moved here at the same time as Bogdan and we met in class 
+                    have been pretty much hand-in-hand for almost 4 years now. 
+                    We worked on almost every school project together and it was where we got the spark 
+                    from and noticed we are a good team then we took this to a serious level.</p>
+            </div>
+            <div class="team-member">
+                <h2>
+                    Bogdan
+                </h2>
+                <p> Well, I'm originally from Romania, came here for my studies. 
+                    I didn't plan ahead of anything like this, having a company, but here I am now, 
+                    and definitely, I'm gonna be around for a while. But yea I’m just an average dude, 
+                    pretty boring in everyday life.</p>
+                </div>
+       
+                <div class="team-member">
+                    <h2>
+                        Laerke
+                    </h2>
+                    <p> She is a valuable member of our team, plus she is the only Danish person among 
+                        us which helps a lot with the language barrier. 
+                        She was the one that gave life to the whole idea.</p>
+                </div>
+        </div>
+    </div>
+    </section>
+    
+    <section class="magazine">
+        <h1 id="magazine">Ideel magazine</h1>
+        <div class="magazine-articles">
+            <article>
+                <img src="../img/about_magazine1.jpg" alt="Coffee cup on bed" />
+                <h2>
+                    <strong>tiramisu</strong> 
+                </h2>
+                <p>From the 19th century onwards, coffee has become the world's most popular beverage, after water.</p>
+                <a href="">Read more </a>
+            </article>
+            <article>
+                <img src="../img/about_magazine2.jpg" alt="Coffee cup on bed" />
+                <h2><strong>History of coffee</strong></h2>
+                <p>From the 19th century onwards, coffee has become the world's most popular beverage, after water.</p>
+                <a href="">Read more </a>
+            </article>
+            <article>
+                <img src="../img/about_magazine3.jpg" alt="Coffee cup on bed" />
+                <h2>
+                    <strong>IS COFFEE MADE?</strong> 
+                </h2>
+                <p>From the 19th century onwards, coffee has become the world's most popular beverage, after water.</p>
+                <a href="">Read more </a>
+            </article>
+        </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="logo footer-logo">
+                <img src="../img/logo-black.svg" alt="Ideel Kaffe black logo" />
+            </div>
+            <form>
+                <label for="email">Subscribe to stay updated!</label>
+                <div class="form-container">
+                    <input type="email" id="fname" name="fname" placeholder="name@mail.com" />
+                    <input type="submit" value="Submit" />
+                </div>
+            </form>
+            <ul class="socials">
+                <a href="https://www.instagram.com/ideel_kaffe/?hl=en">Instagram</a>
+                <a href="https://www.facebook.com/ideelkaffe">Facebook</a>
+                <a href="https://www.linkedin.com/company/ideel-kaffe/">Linkedin</a>
+            </ul>
+            <ul class="important-links">
+                <a href="../html/contact.html">Contact</a>
+                <a href="../html/privacypolicy.html">Privacy Policy</a>
+                <a href="../html/shipping.html">Shipping</a>
+                <a href="../cookiepolicy.html">Cookie Policy</a>
+                <a href="../html/subscription.html">Subscriptions</a>
+                <a href="../html/wholesale.html">Wholesale</a>
+            </ul>
+        </div>
+        <a class="to-top" href="#global-nav">Back to top</a>
+    </footer>
+    <script src="../javascript/cart.js"></script>
+</body>
+
+</html>
