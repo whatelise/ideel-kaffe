@@ -25,7 +25,7 @@ img {
   --pink: #f9ccc2;
   --orange: #ff663e;
   --caramel: #b79f7f;
-  --fadetext: #C4C4C4;
+  --fadetext: #c4c4c4;
 }
 
 nav {
@@ -48,7 +48,8 @@ a,
 p,
 h3,
 form,
-.menu__item,  .cart-extra-info {
+.menu__item,
+.cart-extra-info {
   font-family: "IBM Plex Sans", sans-serif;
 }
 
@@ -75,15 +76,16 @@ h6 {
   color: var(--white);
 }
 p {
-  font-size: 0.8em;
-  font-weight: 200;
-  line-height: 1.2em;
+  font-size: 0.9em;
+  font-weight: 300;
+  line-height: 1.5em;
 }
 
 a {
   text-decoration: none;
   color: inherit;
   font-size: 0.8em;
+  font-weight: 500;
 }
 
 .flex {
@@ -110,11 +112,18 @@ button {
   align-items: center;
 }
 
+.nav-left a {
+  font-size: 0.9em;
+}
+
 .nav-right {
   display: flex;
   text-align: right;
   justify-content: space-evenly;
   align-items: center;
+}
+.nav-right a {
+  font-size: 0.9em;
 }
 
 .logo-container {
@@ -124,7 +133,7 @@ button {
 }
 
 .logo {
-  width: 3em;
+  width: 5em;
   text-align: center;
   justify-content: center;
 }
@@ -142,47 +151,47 @@ footer {
   padding: 4em 5vw;
   font-size: 0.6;
 }
-
-.footer-container > * {
-  font-size: 0.8em;
+label {
+  font-family: "IBM Plex Mono";
+  font-size: 0.9;
+  font-weight: 600;
 }
-
 input[type="email"] {
   background-color: var(--cream);
   border: 1px solid var(--black);
-  padding: 0.4em;
+  padding: 0.8em;
   margin-top: 0.4em;
   width: 100%;
+  font-family: "IBM Plex Mono", monospace;
 }
 
 .form-container {
   position: relative;
   width: 100%;
+  font-family: "IBM Plex Mono", monospace;
 }
 
 input[type="submit"] {
   position: absolute;
-  right: 0.6em;
-  top: 0.9em;
+  right: 0em;
+  top: 1.3em;
   background-color: transparent;
   border: none;
   text-transform: uppercase;
 }
 
 .submit-confirm {
-  display:none;
+  display: none;
 }
-
 
 .error-message {
   display: none;
 }
 
 input:not(:focus):invalid ~ .error-message {
-  display: block; 
+  display: block;
   color: var(--orange);
 }
-
 
 form p {
   padding-top: 1em;
@@ -193,6 +202,8 @@ form p {
   display: flex;
   flex-direction: column;
   margin-left: 10vw;
+  font-weight: 600;
+  line-height: 1.5;
 }
 
 .to-top {
@@ -203,7 +214,6 @@ form p {
   padding-top: 7em;
   text-transform: uppercase;
 }
-
 
 /* DESKTOP */
 
@@ -269,10 +279,8 @@ form p {
     justify-content: flex-start;
     align-content: space-between;
     align-items: flex-start;
-    width: 100%;
     padding-left: 10vw;
     padding-right: 10vw;
-  
   }
   .footer-logo img {
     width: 4em;
@@ -280,8 +288,15 @@ form p {
     bottom: 1em;
     left: 10vw;
   }
+  .footer-logo img {
+    width: 6em;
+    position: absolute;
+    bottom: 1em;
+    left: 10vw;
+  }
 
   form {
+    margin-left: 0vw;
     min-width: 100%;
     margin-bottom: 2em;
   }
