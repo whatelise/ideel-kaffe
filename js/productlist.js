@@ -1,4 +1,4 @@
-localStorage.clear();
+/* localStorage.clear(); */
 
 const urlParams = new URLSearchParams(window.location.search);
 
