@@ -1,10 +1,13 @@
+strong {
+  font-weight: 600;
+}
 .blue-capsules {
   object-fit: cover;
   width: 689px;
   height: 563px;
   left: 32px;
   top: 163px;
-  padding: 3.5%;
+  margin: 3.5%;
 }
 
 .banner {
@@ -12,8 +15,17 @@
   grid-template-columns: 1fr 1fr;
   background-color: var(--dark-green);
 }
-
+.banner-text2 a {
+  text-decoration: underline;
+  margin-top: 1.2em;
+}
 div.banner-text h2:nth-child(2) {
+  font-family: "IBM Plex Sans", sans-serif;
+  text-transform: none;
+  color: var(--white);
+  padding: 15px;
+}
+div.banner-text2 h2:nth-child(2) {
   font-family: "IBM Plex Sans", sans-serif;
   text-transform: none;
   color: var(--white);
@@ -29,10 +41,22 @@ div.banner-text h2:nth-child(3) {
   height: 73px;
 }
 div.banner-text a {
+  color: white;
+}
+div.banner-text2 a {
   color: black;
 }
-div.banner-text h2:nth-child(2) {
+div.banner-text2 h1 {
   color: black;
+}
+div.banner-text h1 {
+  color: white;
+}
+section.banner.farmer-banner h2 {
+  color: black;
+  font-size: 1em;
+  font-weight: 300;
+  text-transform: uppercase;
 }
 .farmer-banner {
   background-color: var(--cream);
