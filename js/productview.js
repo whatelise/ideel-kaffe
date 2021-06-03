@@ -1,4 +1,3 @@
-
 const searchParams = new URLSearchParams(window.location.search);
 const productId = searchParams.get("products");
 
@@ -30,10 +29,10 @@ function showProducts(product) {
   copy.querySelector(".origin2").textContent = product.origin;
   copy.querySelector(".process").textContent = product.process;
   copy.querySelector(".qgrade").textContent = product.qgrade + "/ 100";
- copy.querySelector(".shop-button").setAttribute("data-id", product._id);
-copy.querySelector(".shop-button").addEventListener("click", () => {
-  CART.add(product);
-   });
+  copy.querySelector(".shop-button").setAttribute("data-id", product._id);
+  copy.querySelector(".shop-button").addEventListener("click", () => {
+    CART.add(product);
+  });
 
   //*STRENGTH*//
   if (product.strength == 5) {
