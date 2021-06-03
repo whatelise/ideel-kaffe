@@ -16,7 +16,7 @@ main {
     "two img";
   color: var(--white);
   padding-left: 30px;
-  grid-template-rows: 8.5em 28em;
+  height: 70vh;
 }
 
 .name-and-origin {
@@ -29,7 +29,7 @@ main {
   position: relative;
   justify-self: end;
   grid-area: img;
-  padding-right: 100px;
+  padding-right: 60px;
 }
 
 .productImage {
@@ -69,6 +69,7 @@ h6 {
 .price {
   padding-top: 0.5em;
   font-size: 3em;
+  width: 4em;
 }
 .per {
   padding-top: 3.4em;
@@ -85,7 +86,6 @@ h6 {
 }
 .column1 {
   width: 5em;
-  
 }
 .button-white {
   color: var(--white);
@@ -93,26 +93,24 @@ h6 {
   background-color: transparent;
   text-transform: uppercase;
   display: block;
-  margin-bottom: 1.8em;
 }
 
 button {
-  width: 14em;
+  width: 12em;
   height: 4em;
   font-size: 1em;
-  /* margin-right: 1.6em; */
+  margin-bottom: 1.8em;
+  position: block;
+  margin-right: 1.6em;
 }
 .about-wrapper {
   display: flex;
-  justify-content: space-between;
-  padding: 35px 50px;
+  justify-content: space-around;
+  padding: 35px 40px;
   background-color: var(--light-green);
 }
 .left > * {
   padding-bottom: 20px;
-}
-.about-coffee {
-  width: 500px;
 }
 .about-coffee > * {
   padding-bottom: 20px;
@@ -184,13 +182,14 @@ button {
 
 @media screen and (max-width: 1270px) {
   h6 {
-    font-size: 3em;
+    font-size: 4em;
   }
   .price {
     font-size: 2.2em;
   }
   .per {
     padding-top: 2.2em;
+    display: flex;
   }
   button {
     margin-top: 10px;
@@ -200,19 +199,19 @@ button {
     margin-right: 1.6em;
     margin-bottom: 26px;
   }
-  .product-view {
-    grid-template-rows: 6em 28em;
-  }
 }
 
 @media screen and (max-width: 799px) {
   .breadcrumbs {
-    padding: 10em 2em 2em 2em;
+    padding: 2em 2em 2em 2em;
   }
 
   .product-view {
     display: flex;
     flex-direction: column;
+    padding-left: 40px;
+    height: 100vh;
+    justify-content: center;
   }
   .productImage {
     height: 22em;
