@@ -4,6 +4,7 @@
   height: 563px;
   left: 32px;
   top: 163px;
+  padding: 3.5%;
 }
 
 .banner {
@@ -16,8 +17,40 @@ div.banner-text h2:nth-child(2) {
   font-family: "IBM Plex Sans", sans-serif;
   text-transform: none;
   color: var(--white);
+  padding: 15px;
 }
 div.banner-text h2:nth-child(3) {
   font-family: "IBM Plex Sans", sans-serif;
   color: var(--orange);
+  padding: 15px;
+  width: 470px;
+  size: 18px;
+  line-height: 23.4px;
+  height: 73px;
+}
+div.banner-text a {
+  color: black;
+}
+div.banner-text h2:nth-child(2) {
+  color: black;
+}
+.farmer-banner {
+  background-color: var(--cream);
+}
+.shipping-banner {
+  display: flex;
+  background-color: var(--orange);
+  align-items: center;
+  padding: 1em;
+  justify-content: center;
+}
+.shipping-banner > * {
+  justify-items: center;
+  color: var(--white);
+  text-decoration: underline;
+}
+.shipbox-img {
+  width: 80px;
+  height: auto;
+  padding-right: 2em;
 }
