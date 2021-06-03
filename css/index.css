@@ -44,11 +44,11 @@
 
 .usp {
   display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .vector {
@@ -100,7 +100,7 @@ button {
   background-color: var(--orange);
   color: var(--white);
   padding: 8em 20vw;
- /*  mix-blend-mode: difference; */
+  /*  mix-blend-mode: difference; */
 }
 
 .subscribe-banner > * {
@@ -166,23 +166,21 @@ button {
     height: 100vh;
   }
 
-
   .suflower-banner {
     display: flex;
     background-image: url(../img/sunflower-mobile.jpg);
     background-repeat: no-repeat;
-    background-position:center;
+    background-position: center;
     color: white;
     margin: 0;
     height: 100vh;
   }
 
-
   .farmer-banner {
     display: flex;
     background-image: url(../img/field-worker-mobile.jpg);
     background-repeat: no-repeat;
-    background-position:center;
+    background-position: center;
     color: white;
     margin: 0;
     height: 100vh;
@@ -208,7 +206,4 @@ button {
     margin-left: 2em;
     margin-right: 2em;
   }
-
-
-
 }

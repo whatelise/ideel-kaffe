@@ -1,0 +1,23 @@
+.blue-capsules {
+  object-fit: cover;
+  width: 689px;
+  height: 563px;
+  left: 32px;
+  top: 163px;
+}
+
+.banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--dark-green);
+}
+
+div.banner-text h2:nth-child(2) {
+  font-family: "IBM Plex Sans", sans-serif;
+  text-transform: none;
+  color: var(--white);
+}
+div.banner-text h2:nth-child(3) {
+  font-family: "IBM Plex Sans", sans-serif;
+  color: var(--orange);
+}
