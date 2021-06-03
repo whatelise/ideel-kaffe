@@ -151,12 +151,17 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 2em 6vw;
+  margin: 6vw;
 }
-
+.banner-text h2 {
+  padding-bottom: 6vw;
+}
+.banner-text h1 {
+  padding-bottom: 0.8vw;
+}
 .banner-text a {
   text-decoration: underline;
-  margin-top: 1.2em;
+  padding-top: 6vw;
 }
 
 .subscription-banner {
@@ -173,11 +178,22 @@ button {
   color: var(--white);
   position: relative;
   height: 19em;
+  display: flex;
+  align-items: center;
+  height: 400px;
+  flex-direction: column;
 }
-.landfills button {
-  margin: 0;
+.ocean1 {
+  height: 6vw;
   position: absolute;
-  left: 42%;
+  left: -35vw;
+  top: 16vw;
+}
+.ocean2 {
+  height: 6vw;
+  position: absolute;
+  left: 35vw;
+  top: 16vw;
 }
 
 @media screen and (max-width: 1270px) {
@@ -198,6 +214,18 @@ button {
     font-size: 1em;
     margin-right: 1.6em;
     margin-bottom: 26px;
+  }
+  .ocean1 {
+    height: 6vw;
+    position: absolute;
+    left: -35vw;
+    top: 22vw;
+  }
+  .ocean2 {
+    height: 6vw;
+    position: absolute;
+    left: 35vw;
+    top: 22vw;
   }
 }
 
@@ -244,11 +272,19 @@ button {
     background-color: var(--caramel);
     color: var(--white);
     position: relative;
-    height: 25em;
+    height: 28em;
   }
-  .landfills button {
-    margin: 0;
+
+  .ocean1 {
+    height: 6vw;
     position: absolute;
-    left: 26%;
+    left: -35vw;
+    top: 80vw;
+  }
+  .ocean2 {
+    height: 6vw;
+    position: absolute;
+    left: 28vw;
+    top: 80vw;
   }
 }
