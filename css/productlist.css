@@ -1,3 +1,6 @@
+main {
+  background-color: var(--cream);
+}
 .breadcrumbs {
   font-weight: 400;
   padding: 2em 2em;
@@ -57,7 +60,11 @@ button {
   padding-top: 1vw;
   padding-bottom: 2vw;
 }
-
+.ratingflex {
+  display: flex;
+  justify-content: center;
+  grid-column-gap: 30px;
+}
 .name {
   padding-bottom: 0.5em;
 }
@@ -69,7 +76,7 @@ button {
   width: 20px;
   border: 1px solid var(--orange);
   border-radius: 50px;
-  margin-left: 50px;
+  margin-left: 30px;
 }
 .circleFull {
   height: 20px;
@@ -77,7 +84,7 @@ button {
   background-color: var(--orange);
   border: 1px solid var(--orange);
   border-radius: 50px;
-  margin-left: 50px;
+  margin-left: 30px;
 }
 .price {
   padding-top: 1em;
