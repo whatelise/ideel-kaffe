@@ -1,4 +1,5 @@
 
+
 window.onscroll = function() {myFunction()};
 
 
@@ -41,10 +42,6 @@ const CART = {
     if (_contents) {
       CART.contents = JSON.parse(_contents);
     } else {
-      //   CART.contents = [
-      //     { _id: "3", img: "none", qty: 3, name: "Cookies", price: 500 },
-      //     { _id: "5", img: "none", qty: 5, name: "kowabunga", price: 600 },
-      //   ];
     }
     CART.sync();
     
@@ -105,6 +102,7 @@ totalCart()
 
         const collectionEl = itemCopy.querySelector(".label2");
         collectionEl.textContent = element.collection;
+        itemCopy.querySelector(".cart-product-img-container img").src = element.productimage;
 
         cartcontentEl.appendChild(itemCopy);
       });
@@ -163,25 +161,10 @@ function totalCart() {
   var totalCost = 0;
   for (var index in CART.contents) {
     totalCost+= CART.contents[index].price * CART.contents[index].qty;
- document.querySelector(".cartTotal").textContent=`${totalCost}`;}
+ document.querySelector(".cartTotal").textContent=`${totalCost}`;
+ document.querySelector(".cart-qty").textContent= `${CART.contents[index].qty}`}
   return totalCost;
 }
   
-
-
-
-/* function showTotal() {
-const index = CART.contents.findIndex((element) => element._id);
-let total = 0;
-for (let index = 0; index < CART.contents.length; index +=1);{
-  total += CART.contents[index].price * CART.contents[index].qty;
-  console.log(`total in cart ${total}`);
-  console.log( CART.contents[index].price);
-  console.log(  CART.contents[index].qty);
-  console.log( CART.contents.length);
-  document.querySelector(".cartTotal").textContent=`${total}`;
-}
-} */
-
 
 CART.init();

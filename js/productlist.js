@@ -1,3 +1,5 @@
+/* localStorage.clear(); */
+
 const urlParams = new URLSearchParams(window.location.search);
 
 let url = "https://keasem2-551e.restdb.io/rest/ideel-products";

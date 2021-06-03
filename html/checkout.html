@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,7 +9,7 @@
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/checkout.css" />
     <link rel="stylesheet" href="../css/burger-menu.css" />
-    <link rel="stylesheet" href="../css/cart.css" />
+    <!-- <link rel="stylesheet" href="../css/cart.css" /> -->
 </head>
 
 <body>
@@ -33,165 +34,195 @@
         <!-- BURGER MENU START -->
         <div class="hamburger-menu">
 
-            <input id="menu__toggle" type="checkbox" />
-            <label class="menu__btn" for="menu__toggle">
-                <span></span>
-            </label>
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                </label>
 
-            <ul class="menu__box">
-                <li><a class="menu__item" href="#">Home</a></li>
-                <li><a class="menu__item" href="#">Shop</a></li>
-                <li><a class="menu__item" href="#">Coffee Subscription</a></li>
-                <li><a class="menu__item" href="#">About</a></li>
-                <li><a class="menu__item" href="#">Wholesale</a></li>
-                <li><a class="menu__item" href="#">Account</a></li>
-            </ul>
-        </div>
-        <!-- BURGER MENU END  -->
-        <!-- CART START -->
-        <template class="cart-item-template">
-            <div class="cart-product-container">
-                <div class="cart-product-img-container">
-                    <img src="" alt="">
+                <ul class="menu__box">
+                    <li><a class="menu__item" href="#">Home</a></li>
+                    <li><a class="menu__item" href="#">Shop</a></li>
+                    <li><a class="menu__item" href="#">Coffee Subscription</a></li>
+                    <li><a class="menu__item" href="#">About</a></li>
+                    <li><a class="menu__item" href="#">Wholesale</a></li>
+                    <li><a class="menu__item" href="#">Account</a></li>
+                </ul>
+            </div>
+            <!-- BURGER MENU END  -->
+            <!-- CART START -->
+            <template class="cart-item-template">
+                <div class="cart-product-container">
+                    <div class="cart-product-img-container">
+                        <img src="" alt="">
+                    </div>
+                    <div class="product-info-container">
+                        <label class="label" for="fid-">NAME</label>
+                        <label class="label2" for="fid-">COLLECTION</label>
+                        <p class="price-each"><span></span> DKK</p>
+                        <div class="display-flex">
+                          <button class="minus" type="button">-</button>
+                            <input type="number" name="NAME-" id="fid-" min="0" max="20" />
+                            <button class="plus" type="button">+</button>
+                        </div>
+                    </div>
+            </template>
+            <!--END cart template-->
+          
+            <!-- CART END -->
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="progressPlacement">
+                <div class="progress-container">
+                    <div class="progress" id="progress"></div>
+                    <div class="circle active">INFORMATION</div>
+                    <div class="circle active"> &#8594 SHIPPING</div>
+                    <div class="circle active">&#8594 PAYMENT</div>
+                    <div class="circle active">&#8594 REVIEW</div>
+                    <div class="circle active hidden"></div>
                 </div>
-                <div class="product-info-container">
-                    <label class="label" for="fid-">NAME</label>
-                    <label class="label2" for="fid-">COLLECTION</label>
-                    <p class="price-each"><span></span> DKK</p>
-                    <div class="display-flex"><button class="minus" type="button">-</button>
-                        <input type="number" name="NAME-" id="fid-" min="0" max="20" />
-                        <button class="plus" type="button">+</button>
+            </div>
+            <div class="mask">
+
+                <div id="formContainer">
+                    <form class="info" id="info1">
+                        <p class="express-checkout">EXPRESS CHECKOUT</p>
+                        <div class="express-checkout-icons">
+                            <img src="../img/mobile-pay.svg" alt="Mobile Pay logo">
+                            <img src="../img/gpay-button-white.svg" alt="Google Pay button">
+                            <img src="../img/PayPal.svg" alt="PayPal button">
+                            <img src="https://x.klarnacdn.net/payment-method/assets/badges/generic/klarna.svg"
+                                alt="Karna logo">
+                        </div>
+                        <p class="express-checkout">OR</p>
+                        <h2>Contact information</h2>
+                        <div class="search">
+                            <input type="email" name="name" autocomplete="off" required placeholder="johndoe@mail.com">
+                            <label for="name" class="label-name">
+                                <span class="content-name">Email</span>
+                        </div>
+
+                        <label class="container">Keep me up to date on news and exclusive offers
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <h2>Contact information</h2>
+                        <div class="fullName">
+                            <div class="firstName">
+                                <input type="text" name="name" autocomplete="off" required placeholder="John">
+                                <label for="name" class="label-name">
+                                    <span class="content-name">First name</span>
+                            </div>
+                            <div class="lastName">
+                                <input type="text" name="name" autocomplete="off" required placeholder="Doe">
+                                <label for="name" class="label-name">
+                                    <span class="content-name">Last name</span>
+                            </div>
+                        </div>
+
+                        <div class="search">
+                            <input type="email" name="name" autocomplete="off" required
+                                placeholder="Great Russel St.  63">
+                            <label for="name" class="label-name">
+                                <span class="content-name">Adress</span>
+                        </div>
+                        <div class="search">
+                            <input type="email" name="name" autocomplete="off" required
+                                placeholder="Great Russel St.  63">
+                            <label for="name" class="label-name">
+                                <span class="content-name">Adress</span>
+                        </div>
+                    </form>
+                    <form class="info" id="info2">
+                        <h2>Where would you like your order sent to? </h2>
+                        <div class="search">
+                            <input type="email" name="name" autocomplete="off" required placeholder="Danmark">
+                            <label for="name" class="label-name">
+                                <span class="content-name">Country</span>
+                        </div>
+                        <div class="search">
+                            <input type="email" name="name" autocomplete="off" required
+                                placeholder="Great Russel St.  63">
+                            <label for="name" class="label-name">
+                                <span class="content-name">Adress</span>
+                        </div>
+                        <div class="fullName">
+                            <div class="firstName">
+                                <input type="text" name="name" autocomplete="off" required placeholder="London">
+                                <label for="name" class="label-name">
+                                    <span class="content-name">City</span>
+                            </div>
+                            <div class="lastName">
+                                <input type="text" name="name" autocomplete="off" required placeholder="2200">
+                                <label for="name" class="label-name">
+                                    <span class="content-name">Zip code</span>
+                            </div>
+                        </div>
+                    </form>
+                    <form class="info" id="info3">
+                        <h1>How would you like to pay?</h1>
+                        <label class="container">Credit card
+                            <input type="radio" checked="checked" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Mobile Pay
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="container">Gidt card
+                            <input type="radio" name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                        <div class="search">
+                            <input type="text" name="name" autocomplete="off" required placeholder="XXXX-XXXX-XXXX">
+                            <label for="name" class="label-name">
+                                <span class="content-name">Card Number</span>
+                        </div>
+                        <div class="fullName">
+                            <div class="firstName">
+                                <input type="text" name="name" autocomplete="off" required placeholder="DD-MM-YYYY">
+                                <label for="name" class="label-name">
+                                    <span class="content-name">Expiration</span>
+                            </div>
+                            <div class="lastName">
+                                <input type="text" name="name" autocomplete="off" required placeholder="XXX">
+                                <label for="name" class="label-name">
+                                    <span class="content-name">CVV</span>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="finalCheckout">
+                        <h1>Your order has been recieved!</h1>
+                        <p>Ordernumber: xxxx</p>
+                        <p>A confirmation email has been sent to you.</p>
+                        <a href="../index.html"><button class="btn">CONTINUE EXPLORING</button></a>
                     </div>
                 </div>
-        </template>
-        <!--END cart template-->
+                <div class="btn-checkout-container"><button class="btn" id="prev" disabled>BACK</button>
+                    <button class="btn" id="next">CONTINUE</button>
+                </div>
+                <div style="display:none;" id="myDiv" class="animate-bottom">
+        </section>
         <aside id="cart" class="cart">
-            <div class="cart-top"><h2>Cart(0)</h2>
-            <div class="x"></div></div>
+            <div class="cart-top">
+                <h2>Cart overview</h2>
+                <div class="x"></div>
+            </div>
             <form>
-                <div class="cart-content">
+                <div class="cart-content" >
                     <h4>THE CART IS EMPTY</h4>
                 </div>
-                <h4 class="shipping-info">Shipping & taxes calculated at checkout</h4>
-                <h4 class="totalPlacement">Total: <span class="cartTotal"> </span> DKK</h4>
-                <button class="checkoutbutton" type="submit"><a href="html/checkout.html">Checkout & Pay</a></button>
+                <div class="cart-extra-info">
+                    <p class="shipping-info">Shipping & taxes calculated at checkout</p>
+
+                    <button class="checkoutbutton" type="submit"><a class="totalPlacement" href="../html/checkout.html">Checkout Total: <span class="cartTotal"></span> DKK</a></button>
+                </div>
             </form>
         </aside>
-        <!-- CART END -->
-    </nav>
-</header>
-<main>
-    <section>
-    <div class="progressPlacement">
-    <div class="progress-container">
-        <div class="progress" id="progress"></div>
-        <div class="circle active">INFORMATION</div>
-        <div class="circle active"> &#8594 SHIPPING</div>
-        <div class="circle active">&#8594 PAYMENT</div>
-        <div class="circle active">&#8594 REVIEW</div>
-        <div class="circle active hidden"></div>
-    </div></div>
-    <div class="mask">
-        <div id="formContainer">
-    <form class="info" id="info1">
-        <h2>Contact information</h2>
-    <div class="search">
-      <input type="email" name="name" autocomplete="off" required placeholder="kamillajensen@mail.com">
-      <label  for="name" class="label-name"> 
-      <span class="content-name">Email</span>
-  </div>
-
-  <label class="container">Keep me up to date on news and exclusive offers
-    <input type="radio" name="radio">
-    <span class="checkmark"></span>
-    </label>
-    <h2>Contact information</h2>
-  <div class="fullName"><div class="firstName" >
-      <input type="text" name="name" autocomplete="off" required placeholder="John">
-      <label  for="name" class="label-name"> 
-      <span class="content-name">First name</span>   
-  </div>
-  <div class="lastName">
-      <input type="text" name="name" autocomplete="off" required placeholder="Doe">
-      <label  for="name" class="label-name"> 
-      <span class="content-name">Last name</span>   
-  </div></div>
-</form>
-<form class="info" id="info2">
-<h2>Where would you like your order sent to? </h2>
-<div class="search">
-<input type="email" name="name" autocomplete="off" required placeholder="Danmark">
-<label  for="name" class="label-name"> 
-<span class="content-name">Country</span>
-</div>
-<div class="search">
-<input type="email" name="name" autocomplete="off" required placeholder="Great Russel St.  63">
-<label  for="name" class="label-name"> 
-<span class="content-name">Adress</span>
-</div>
-<div class="fullName"><div class="firstName" >
-<input type="text" name="name" autocomplete="off" required placeholder="London">
-<label  for="name" class="label-name"> 
-<span class="content-name">City</span>   
-</div>
-<div class="lastName">
-<input type="text" name="name" autocomplete="off" required placeholder="2200">
-<label  for="name" class="label-name"> 
-<span class="content-name">Zip code</span>   
-</div></div>
-</form>
-<form class="info" id="info3">
-<h1>How would you like to pay?</h1>
-<label class="container">Credit card
-<input type="radio" checked="checked" name="radio">
-<span class="checkmark"></span>
-</label>
-<label class="container">Mobile Pay
-<input type="radio" name="radio">
-<span class="checkmark"></span>
-</label>
-<label class="container">Gidt card
-<input type="radio" name="radio">
-<span class="checkmark"></span>
-</label>
-<div class="search">
-<input type="text" name="name" autocomplete="off" required placeholder="XXXX-XXXX-XXXX">
-<label  for="name" class="label-name"> 
-<span class="content-name">Card Number</span>
-</div>
-<div class="fullName"><div class="firstName" >
-<input type="text" name="name" autocomplete="off" required placeholder="DD-MM-YYYY">
-<label  for="name" class="label-name"> 
-<span class="content-name">Expiration</span>   
-</div>
-<div class="lastName">
-<input type="text" name="name" autocomplete="off" required placeholder="XXX">
-<label  for="name" class="label-name"> 
-<span class="content-name">CVV</span>   
-</div></div>
-</form>
-<div class="finalCheckout">
-<h1>Your order has been recieved!</h1>
-<p>Ordernumber: xxxx</p>
-<p>A confirmation email has been sent to you.</p>
-<a href="../index.html"><button class="btn">CONTINUE EXPLORING</button></a>
-</div>
-</div>
-<button class="btn" id="prev" disabled>BACK</button>
-<button class="btn" id="next" >NEXT</button>
-
-  <div style="display:none;" id="myDiv" class="animate-bottom">
-  </section> 
-<aside class="cartOverview cart" id="cart">
-<h3>Shopping Cart</h3>
-<form>
-  <div class="cart-content">
-    <h4>THE CART IS EMPTY</h4>
-  </div>
- <h4>Total: <span class="cartTotal"> </span> DKK</h4>
-</form>
-</aside>
-</main>
+    </main>
 </body>
+<script src="../js/cart.js"></script>
 <script src="../js/checkout.js"></script>
+
 </html>
