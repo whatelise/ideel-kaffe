@@ -15,6 +15,7 @@ strong {
   grid-template-columns: 1fr 1fr;
   background-color: var(--dark-green);
 }
+
 .banner-text2 a {
   text-decoration: underline;
   margin-top: 1.2em;
@@ -25,13 +26,13 @@ div.banner-text h2:nth-child(2) {
   color: var(--white);
   padding: 15px;
 }
-div.banner-text2 h2:nth-child(2) {
+.white {
   font-family: "IBM Plex Sans", sans-serif;
   text-transform: none;
   color: var(--white);
   padding: 15px;
 }
-div.banner-text h2:nth-child(3) {
+.orange {
   font-family: "IBM Plex Sans", sans-serif;
   color: var(--orange);
   padding: 15px;
@@ -43,10 +44,12 @@ div.banner-text h2:nth-child(3) {
 div.banner-text a {
   color: white;
 }
-div.banner-text2 a {
+.a-black {
   color: black;
 }
-div.banner-text2 h1 {
+.a-white {
+  color: white;
+}
   color: black;
 }
 div.banner-text h1 {
@@ -77,4 +80,36 @@ section.banner.farmer-banner h2 {
   width: 80px;
   height: auto;
   padding-right: 2em;
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 699px) {
+  .banner img {
+    display: none;
+  }
+  .farmer-banner {
+    display: flex;
+    background-image: url(../img/field-worker-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    margin: 0;
+    height: 100vh;
+  }
+
+  .top-banner {
+    background-image: none;
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    height: 100vh;
+  }
+  .banner-text {
+    text-align: center;
+  }
+  .banner top-banner {
+    display: flex;
+  }
 }
