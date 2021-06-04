@@ -3,7 +3,7 @@ main {
 }
 .breadcrumbs {
   font-weight: 400;
-  padding: 2em 2em;
+  padding: 2em 2em 0.5em;
   color: var(--white);
 }
 .breadcrumbs > * {
@@ -14,9 +14,10 @@ main {
   grid-template-areas:
     "one img"
     "two img";
+  grid-template-rows: 30% 70%;
   color: var(--white);
   padding-left: 30px;
-  height: 70vh;
+  height: 76vh;
 }
 
 .name-and-origin {
@@ -67,7 +68,8 @@ h6 {
 }
 
 .price {
-  padding-top: 0.5em;
+  padding-top: 0.2em;
+  margin-bottom: 0.2em;
   font-size: 3em;
   width: 4em;
 }
@@ -87,6 +89,7 @@ h6 {
 .column1 {
   width: 5em;
 }
+
 .button-white {
   color: var(--white);
   border: 1px solid var(--white);
@@ -97,9 +100,9 @@ h6 {
 
 button {
   width: 12em;
-  height: 4em;
+  height: 3.8em;
   font-size: 1em;
-  margin-bottom: 1.8em;
+  margin-bottom: 1.4em;
   position: block;
   margin-right: 1.6em;
 }
@@ -207,14 +210,14 @@ button {
     padding-top: 2.2em;
     display: flex;
   }
-  button {
+  /* button {
     margin-top: 10px;
     width: 18vw;
     height: 6vw;
     font-size: 1em;
     margin-right: 1.6em;
     margin-bottom: 26px;
-  }
+  } */
   .ocean1 {
     height: 6vw;
     position: absolute;
@@ -229,16 +232,16 @@ button {
   }
 }
 
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 699px) {
   .breadcrumbs {
-    padding: 2em 2em 2em 2em;
+    padding: 8em 2em 2em 2em;
   }
 
   .product-view {
     display: flex;
     flex-direction: column;
     padding-left: 40px;
-    height: 100vh;
+    height: 110vh;
     justify-content: center;
   }
   .productImage {
@@ -246,8 +249,11 @@ button {
   }
   .price {
     font-size: 1.8em;
+    padding-bottom: 14px;
   }
-
+  .per {
+    padding-top: 20px;
+  }
   button {
     margin-top: 0px;
     width: 10em;

@@ -236,10 +236,21 @@ form p {
     width: 100%;
   }
 
+  nav {
+    display: grid;
+    grid-template-columns: 130px 1fr 130px;
+    align-items: center;
+    justify-items: center;
+    padding: 0;
+  }
   #global-nav {
     position: fixed;
     width: 100%;
     z-index: 99;
+  }
+  .logo {
+    width: 10vw;
+    padding: 10px;
   }
 
   .top-banner {
@@ -257,7 +268,7 @@ form p {
   }
 
   .nav-right {
-    justify-content: left;
+    float: left;
   }
 
   .logo-container {
@@ -266,15 +277,11 @@ form p {
 
   .cart1 {
     order: 1;
-    padding-left: 1em;
   }
 
   .hamburger-menu {
     order: 3;
-  }
-
-  .menu__btn {
-    margin-right: 1em;
+    height: 35px;
   }
 
   .footer-container {
