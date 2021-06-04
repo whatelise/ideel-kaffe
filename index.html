@@ -16,8 +16,8 @@
     <header>
     <nav id="global-nav">
         <div class="nav-left">
-            <a href="../index.html">Home</a>
-            <a href="../html/productlist.html">Shop</a>
+            <a class="active" href="../index.html">Home</a>
+            <a ref="../html/productlist.html">Shop</a>
             <a href="../html/subscription.html">Coffee Subscription</a>
             <a href="../html/about.html">About</a>
         </div>
@@ -102,7 +102,7 @@
             <a href="">Read more</a>
         </div>
         <div class="usp">
-            <img class="vector" alt="" src="img/Vector-1.svg" alt="" />
+            <img class="vector" alt="" src="img/Vector-1.svg" alt="vector image" />
             <h2>Organic</h2>
             <p>
                 Lorem ipsum dolor amet brooklyn commodo labo laboris air plant in
@@ -111,6 +111,11 @@
             <a href="">Read more</a>
         </div>
         <div class="usp">
+            <svg id="text-container" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="1020" height="554">
+                <path id="text-curve" d="M872 116.63c-141.71-62.56-223.41 34.17-324.32 72.91C461 222.81 416.75 138.4 393 94c0 0-57.27-84.81-134.63 3.09S42 176.14 42 176.14" fill="none" stroke="none" stroke-miterlimit="10"/>
+                <text class="textpath" y="80" font-size="12">
+                    <textpath id="text-path" href="#text-curve" startOffset="10">ETHIOPIAN SPECIALTY GRADE COFFEE</textpath></text>
+                </svg>
             <img class="vector" src="img/Vector-2.svg" alt="" />
             <h2>Social Impact</h2>
             <p>
@@ -124,30 +129,40 @@
         <h1>Home-compostable Capsules</h1>
         <h2>Organic coffee - Nespresso compatibile</h2>
         <div class="product-display">
-            <div class="product-container">
-                <h3>10 capsules</h3>
-                <h3>Nespresso Compatible</h3>
-                <img src="img/sample-product.jpg" alt="" />
-                <h2>Name of product</h2>
-                <h3>Sidama / Jimma</h3>
-                <h2>39.00 DKK</h2>
-            </div>
-            <div class="product-container">
-                <h3>10 capsules</h3>
-                <h3>Nespresso Compatible</h3>
-                <img src="img/sample-product.jpg" alt="" />
-                <h2>Name of product</h2>
-                <h3>Sidama / Jimma</h3>
-                <h2>39.00 DKK</h2>
-            </div>
-            <div class="product-container">
-                <h3>10 capsules</h3>
-                <h3>Nespresso Compatible</h3>
-                <img src="img/sample-product.jpg" alt="" />
-                <h2>Name of product</h2>
-                <h3>Sidama / Jimma</h3>
-                <h2>39.00 DKK</h2>
-            </div>
+            <template class="product-template">
+                <div class="product-container">
+                  <div class="flex">
+                    <h3>10 capsules</h3>
+                    <h3>Nespresso Compatible</h3>
+                  </div>
+                  <div class="image-container">
+                    <img
+                      class="productImage"
+                      src="../img/sample-product.jpg"
+                      alt=""
+                    />
+                    <div class="overlay">
+                      <h2 class="description">HERE IS INFO ABOUT THE PRODUCT</h2>
+                      <a class="viewProduct"
+                        ><button class="button-white">DISCOVER</button></a
+                      >
+                    </div>
+                  </div>
+                  <h2 class="name"></h2>
+                  <h3 class="origin">Sidama / Jimma</h3>
+                  <div class="ratingflex intensity">
+                    <p class="strong">Intensity</p>
+                    <div class="rating">
+                      <div id="intensity1" class="circleEmpty"></div>
+                      <div id="intensity2" class="circleEmpty"></div>
+                      <div id="intensity3" class="circleEmpty"></div>
+                      <div id="intensity4" class="circleEmpty"></div>
+                      <div id="intensity5" class="circleEmpty"></div>
+                    </div>
+                  </div>
+                  <h2 class="price strong">39.00</h2>
+                </div></template
+              >
         </div>
         <button>See all products</button>
     </section>
@@ -214,7 +229,8 @@
         </div>
         <a class="to-top" href="#global-nav">Back to top</a>
     </footer>
-    <script src="js/cart.js"></script>
+    <!-- <script src="js/cart.js"></script> -->
+    <script src="js/index.js"></script>
     
 </body>
 
