@@ -19,7 +19,9 @@
 .secondary-nav a:hover {
   text-decoration: underline;
 }
-
+strong {
+  font-weight: 500;
+}
 .banner {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -35,8 +37,8 @@
 
 .banner-text > * {
   text-align: left;
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   justify-content: top;
   margin: 1.5em 6vw;
 }
