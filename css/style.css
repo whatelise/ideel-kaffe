@@ -104,7 +104,13 @@ button {
   padding: 1em;
   text-transform: uppercase;
 }
-
+#global-nav a:hover {
+  text-decoration: underline;
+}
+.active {
+  text-decoration: underline;
+  font-style: italic;
+}
 .nav-left {
   display: flex;
   text-align: left;
