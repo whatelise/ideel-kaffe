@@ -193,12 +193,8 @@ button {
     padding-top: 2.2em;
   }
   button {
-    margin-top: 10px;
     width: 18vw;
-    height: 6vw;
     font-size: 1em;
-    margin-right: 1.6em;
-    margin-bottom: 26px;
   }
   .product-view {
     grid-template-rows: 6em 28em;

@@ -29,7 +29,7 @@
         <div class="nav-right">
             <a class="wholesale" href="../html/wholesale.html">Wholesale</a>
             <a class="account" href="../html/account.html">Account</a>
-            <a class="cart-icon">Cart (0)</a>
+            <a class="cart-icon">Cart (<span class="cart-qty"></span>)</a>
         </div>
         <!-- BURGER MENU START -->
         <div class="hamburger-menu">
@@ -133,13 +133,25 @@
                             <label for="name" class="label-name">
                                 <span class="content-name">Adress</span>
                         </div>
+                        <div class="fullName">
+                            <div class="firstName">
+                                <input type="text" name="name" autocomplete="off" required placeholder="John">
+                                <label for="name" class="label-name">
+                                    <span class="content-name">Country/region</span>
+                            </div>
+                            <div class="lastName">
+                                <input type="text" name="name" autocomplete="off" required placeholder="Doe">
+                                <label for="name" class="label-name">
+                                    <span class="content-name">Postcode</span>
+                            </div>
+                        </div>
                     </form>
                     <form class="info" id="info2">
                         <h2>Where would you like your order sent to? </h2>
                         <div class="search">
                             <input type="email" name="name" autocomplete="off" required placeholder="Danmark">
                             <label for="name" class="label-name">
-                                <span class="content-name">Country</span>
+                                <span class="content-name">City</span>
                         </div>
                         <div class="search">
                             <input type="email" name="name" autocomplete="off" required
@@ -206,7 +218,6 @@
         </section>
         <aside id="cart" class="cart">
             <div class="cart-top">
-                <h2>Cart overview</h2>
                 <div class="x"></div>
             </div>
             <form>
@@ -215,10 +226,12 @@
                 </div>
                 <div class="cart-extra-info">
                     <p class="shipping-info">Shipping & taxes calculated at checkout</p>
-
-                    <button class="checkoutbutton" type="submit"><a class="totalPlacement" href="../html/checkout.html">Checkout Total: <span class="cartTotal"></span> DKK</a></button>
+                    <div class="blue">
+                   <h2 class="total">total:</h2><h2 class="total-price"><span class="cartTotal"></span> DKK</h2>
+                    </div>
                 </div>
-            </form>
+            </form>                
+            </div>
         </aside>
     </main>
 </body>
