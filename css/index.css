@@ -105,29 +105,44 @@ button {
   font-weight: 600;
   margin-bottom: 0.8em;
 }
-
+@keyframes fade {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
 .sub-1 {
   position: absolute;
   left: 8vw;
   top: 1em;
+  animation: fade 2s infinite;
 }
 
 .sub-2 {
   position: absolute;
   right: 10vw;
   top: 1.5em;
+  animation: fade 2s infinite;
+  animation-delay: 0.4s;
 }
 
 .sub-3 {
   position: absolute;
   left: 8vw;
   bottom: 0em;
+  animation: fade 2s infinite;
+  animation-delay: 0.8s;
 }
 
 .sub-4 {
   position: absolute;
   right: 10vw;
   bottom: 0.6em;
+  animation: fade 2s infinite;
+  animation-delay: 1.2s;
 }
 
 .button-white {
@@ -136,6 +151,9 @@ button {
   background-color: var(--orange);
   text-transform: uppercase;
   padding: 1em;
+}
+.button-white:hover {
+  border: 2px solid var(--white);
 }
 svg {
   position: absolute;
