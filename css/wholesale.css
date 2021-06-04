@@ -1,0 +1,115 @@
+strong {
+  font-weight: 600;
+}
+.blue-capsules {
+  object-fit: cover;
+  width: 689px;
+  height: 563px;
+  left: 32px;
+  top: 163px;
+  margin: 3.5%;
+}
+
+.banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--dark-green);
+}
+
+.banner-text2 a {
+  text-decoration: underline;
+  margin-top: 1.2em;
+}
+div.banner-text h2:nth-child(2) {
+  font-family: "IBM Plex Sans", sans-serif;
+  text-transform: none;
+  color: var(--white);
+  padding: 15px;
+}
+.white {
+  font-family: "IBM Plex Sans", sans-serif;
+  text-transform: none;
+  color: var(--white);
+  padding: 15px;
+}
+.orange {
+  font-family: "IBM Plex Sans", sans-serif;
+  color: var(--orange);
+  padding: 15px;
+  width: 470px;
+  size: 18px;
+  line-height: 23.4px;
+  height: 73px;
+}
+div.banner-text a {
+  color: white;
+}
+.a-black {
+  color: black;
+}
+.a-white {
+  color: white;
+}
+  color: black;
+}
+div.banner-text h1 {
+  color: white;
+}
+section.banner.farmer-banner h2 {
+  color: black;
+  font-size: 1em;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.farmer-banner {
+  background-color: var(--cream);
+}
+.shipping-banner {
+  display: flex;
+  background-color: var(--orange);
+  align-items: center;
+  padding: 1em;
+  justify-content: center;
+}
+.shipping-banner > * {
+  justify-items: center;
+  color: var(--white);
+  text-decoration: underline;
+}
+.shipbox-img {
+  width: 80px;
+  height: auto;
+  padding-right: 2em;
+}
+
+/* MOBILE */
+
+@media screen and (max-width: 699px) {
+  .banner img {
+    display: none;
+  }
+  .farmer-banner {
+    display: flex;
+    background-image: url(../img/field-worker-mobile.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    margin: 0;
+    height: 100vh;
+  }
+
+  .top-banner {
+    background-image: none;
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    height: 100vh;
+  }
+  .banner-text {
+    text-align: center;
+  }
+  .banner top-banner {
+    display: flex;
+  }
+}
