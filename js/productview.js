@@ -1,3 +1,5 @@
+localStorage.clear();
+
 const searchParams = new URLSearchParams(window.location.search);
 const productId = searchParams.get("products");
 

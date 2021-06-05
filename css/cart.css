@@ -32,7 +32,6 @@
     width:100%;
     content: '\d7';
     color: var(--white);
-   
 }
 
 
@@ -95,7 +94,6 @@
 }
 .cart-product-img-container img {
   position: absolute;
-  width: 100%;
 }
   
   .cart form {
