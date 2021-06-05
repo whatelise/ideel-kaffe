@@ -17,7 +17,7 @@ function myFunction() {
   }
 }
   
-window.addEventListener("load", hideCart);
+window.addEventListener("load", showCart);
 
 function hideCart() {
   console.log("hideCart()");
@@ -56,10 +56,12 @@ const CART = {
     countCart() 
 totalCart()
     const cartcontentEl = document.querySelector(".cart-content");
-    cartcontentEl.innerHTML = "";
+    const cartQty =  document.querySelector(".cart-qty1");
+    cartcontentEl.innerHTML = "0";
     document.querySelector(".cartTotal").textContent = CART.contents.length;
     if (CART.contents.length === 0) {
       cartcontentEl.innerHTML = "<h4> THE CART IS EMPTY</h4>";
+      /* cartQty.innerHTML = "0"; */
     } else {
       CART.contents.forEach((element) => {
         console.log(element);
@@ -163,8 +165,10 @@ function totalCart() {
   for (var index in CART.contents) {
     totalCost+= CART.contents[index].price * CART.contents[index].qty;
  document.querySelector(".cartTotal").textContent=`${totalCost}`;
+ console.log(totalCost);
  document.querySelector(".cart-qty1").textContent= `${CART.contents[index].qty}`;
- document.querySelector(".cart-qty2").textContent= `${CART.contents[index].qty}`;}
+ document.querySelector(".cart-qty2").textContent= `${CART.contents[index].qty}`;
+}
   return totalCost;
 }
   
