@@ -163,7 +163,8 @@ function totalCart() {
   for (var index in CART.contents) {
     totalCost+= CART.contents[index].price * CART.contents[index].qty;
  document.querySelector(".cartTotal").textContent=`${totalCost}`;
- document.querySelector(".cart-qty").textContent= `${CART.contents[index].qty}`}
+ document.querySelector(".cart-qty1").textContent= `${CART.contents[index].qty}`;
+ document.querySelector(".cart-qty2").textContent= `${CART.contents[index].qty}`;}
   return totalCost;
 }
   
