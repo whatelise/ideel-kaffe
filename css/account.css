@@ -62,7 +62,7 @@ strong {
 @media screen and (max-width: 699px) {
   .account-page {
     background-color: var(--blue);
-    padding: 50px;
+    padding: 80px 40px;
     height: 100vh;
   }
   .login-forms {
