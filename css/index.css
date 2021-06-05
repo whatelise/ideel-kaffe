@@ -327,8 +327,8 @@ button {
   .product-display {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 2em;
-    margin-right: 2em;
+    margin-left: 0em;
+    margin-right: 0em;
   }
   .svg1 {
     position: absolute;
