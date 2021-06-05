@@ -32,6 +32,7 @@ strong {
 }
 
 .login-forms input[type="password"] {
+  display: block;
   background-color: var(--cream);
   border: 0px solid var(--black);
   padding: 0.8em;
@@ -42,10 +43,18 @@ strong {
   font-family: "IBM Plex Mono", monospace;
 }
 .login-forms input[type="submit"] {
-  position: static;
-  /* left: 12em;
-  top: 48em; */
+  position: initial;
+  padding: 0.8em;
   background-color: transparent;
   border: none;
   text-transform: uppercase;
+  background-color: var(--blue);
+  height: 2em;
+  width: 32vw;
+  padding-bottom: 2em;
+  margin-top: 2em;
+}
+.account-button {
+  font-size: 1em;
+  font-weight: 500;
 }
