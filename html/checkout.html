@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ideel Kaffe home page</title>
     <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/checkout.css" />
     <link rel="stylesheet" href="../css/burger-menu.css" />
-    <!-- <link rel="stylesheet" href="../css/cart.css" /> -->
+    <link rel="stylesheet" href="../css/cart.css" />
+    <link rel="stylesheet" href="../css/checkout.css" />
 </head>
 
 <body>
@@ -38,14 +38,14 @@
                 <label class="menu__btn" for="menu__toggle">
                     <span></span>
                 </label>
-
+    
                 <ul class="menu__box">
-                    <li><a class="menu__item" href="#">Home</a></li>
-                    <li><a class="menu__item" href="#">Shop</a></li>
-                    <li><a class="menu__item" href="#">Coffee Subscription</a></li>
-                    <li><a class="menu__item" href="#">About</a></li>
-                    <li><a class="menu__item" href="#">Wholesale</a></li>
-                    <li><a class="menu__item" href="#">Account</a></li>
+                    <li><a class="menu__item" href="../index.html">Home</a></li>
+                    <li><a class="menu__item" href="../html/productlist.html">Shop</a></li>
+                    <li><a class="menu__item" href="../html/subscription.html">Coffee Subscription</a></li>
+                    <li><a class="menu__item" href="../html/about.html">About</a></li>
+                    <li><a class="menu__item" href="../html/wholesale.html">Wholesale</a></li>
+                    <li><a class="menu__item" href="../html/account.html">Account</a></li>
                 </ul>
             </div>
             <!-- BURGER MENU END  -->
@@ -67,7 +67,20 @@
                     </div>
             </template>
             <!--END cart template-->
-          
+            <aside id="cart" class="cart">
+                <div class="cart-top"><h2>Cart(<span class="cart-qty"></span>)</h2>
+                <div class="x"></div></div>
+                <form>
+                    <div class="cart-content">
+                        <h4>THE CART IS EMPTY</h4>
+                    </div>
+                    <div class="cart-extra-info">
+                    <p class="shipping-info">Shipping & taxes calculated at checkout</p>
+                    
+                    <button class="checkoutbutton" type="submit"><a href="../html/checkout.html">Checkout<p class="totalPlacement">Total: <span class="cartTotal"> </span> DKK</p></a></button>
+                </div>
+                </form>
+            </aside>
             <!-- CART END -->
         </nav>
     </header>
