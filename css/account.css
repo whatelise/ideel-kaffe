@@ -1,21 +1,51 @@
 .account-page {
   background-color: var(--blue);
-  height: 30em;
-  width: 85vw;
-  position: absolute;
-  top: 5.92em;
-  margin-left: 50px;
-  margin-right: 50px;
-  padding: 30px;
+  padding: 50px;
 }
-
+.account-page h1 {
+  padding: 10px;
+}
 .login-forms {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   background-color: var(--pink);
-  height: 25em;
+  height: 26em;
+  padding: 30px;
+  justify-items: center;
 }
 
-.login-forms input {
-  width: 10em;
+strong {
+  font-weight: 500;
+}
+.h2 {
+  padding-bottom: 34px;
+}
+.login-forms input[type="email"] {
+  background-color: var(--cream);
+  border: 0px solid var(--black);
+  padding: 0.8em;
+  margin-top: 0.4em;
+  width: 30vw;
+  height: 2em;
+  margin-bottom: 40px;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.login-forms input[type="password"] {
+  background-color: var(--cream);
+  border: 0px solid var(--black);
+  padding: 0.8em;
+  margin-top: 0.4em;
+  width: 30vw;
+  height: 2em;
+  margin-bottom: 30px;
+  font-family: "IBM Plex Mono", monospace;
+}
+.login-forms input[type="submit"] {
+  position: static;
+  /* left: 12em;
+  top: 48em; */
+  background-color: transparent;
+  border: none;
+  text-transform: uppercase;
 }
