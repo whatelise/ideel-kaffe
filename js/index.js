@@ -15,7 +15,7 @@ function updateTextPathOffset(offset) {
   textPath2.setAttribute("startOffset", offset);
 }
 
-updateTextPathOffset(10);
+updateTextPathOffset(100);
 
 function onScroll() {
   requestAnimationFrame(function () {

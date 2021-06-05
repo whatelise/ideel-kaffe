@@ -181,6 +181,7 @@ button {
   }
   .productImage {
     height: 22em;
+    width: auto;
   }
   .shipping-banner a {
     font-size: 0.9em;
