@@ -1,0 +1,21 @@
+.account-page {
+  background-color: var(--blue);
+  height: 30em;
+  width: 85vw;
+  position: absolute;
+  top: 5.92em;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 30px;
+}
+
+.login-forms {
+  display: flex;
+  justify-content: space-around;
+  background-color: var(--pink);
+  height: 25em;
+}
+
+.login-forms input {
+  width: 10em;
+}
