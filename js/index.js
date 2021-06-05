@@ -4,11 +4,18 @@ var path = document.querySelector(textPath.getAttribute("href"));
 var pathLength = path.getTotalLength();
 console.log(pathLength);
 
+var textPath2 = document.querySelector("#text-path2");
+var textContainer2 = document.querySelector("#text-container2");
+var path2 = document.querySelector(textPath2.getAttribute("href"));
+var pathLength2 = path2.getTotalLength();
+console.log(pathLength2);
+
 function updateTextPathOffset(offset) {
   textPath.setAttribute("startOffset", offset);
+  textPath2.setAttribute("startOffset", offset);
 }
 
-updateTextPathOffset(100);
+updateTextPathOffset(10);
 
 function onScroll() {
   requestAnimationFrame(function () {
@@ -18,6 +25,13 @@ function onScroll() {
     console.log(scrollPercent);
 
     updateTextPathOffset(window.scrollY * 2.2);
+
+    var rect2 = textContainer2.getBoundingClientRect();
+    console.log(rect2.y);
+    var scrollPercent2 = rect2.y / window.innerHeight;
+    console.log(scrollPercent2);
+
+    updateTextPathOffset(window.scrollY * 1);
   });
 }
 

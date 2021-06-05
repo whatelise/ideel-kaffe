@@ -155,13 +155,22 @@ button {
 .button-white:hover {
   border: 2px solid var(--white);
 }
-svg {
+.svg1 {
   position: absolute;
   left: -25vw;
-  top: 38vh;
+  top: 80vh;
+  transform: rotate(180deg);
+}
+.svg2 {
+  position: absolute;
+  left: 50vw;
+  top: 140vh;
   transform: rotate(180deg);
 }
 .textpath {
+  fill: var(--orange);
+}
+.textpath2 {
   fill: var(--orange);
 }
 /* PRODUCT DISPLAY*/
