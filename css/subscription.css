@@ -147,6 +147,9 @@
   background-color: var(--white);
 }
 /* FAQ POP UP */
+.hidden {
+  display: none;
+}
 .FAQ {
   background-color: var(--caramel);
   position: absolute;
@@ -242,5 +245,15 @@
 
   a {
     font-size: 0.9em;
+  }
+  .FAQ {
+    height: 200vh;
+    width: 50vw;
+    top: 20%;
+    left: 12%;
+    padding: 60px;
+    justify-content: center;
+    text-align: center;
+    color: var(--white);
   }
 }
