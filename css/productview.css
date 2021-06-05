@@ -98,7 +98,8 @@ h6 {
   display: block;
 }
 
-.product-view button {
+.product-view button,
+.landfills button {
   width: 12em;
   height: 3.8em;
   font-size: 1em;
