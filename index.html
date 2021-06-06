@@ -49,39 +49,39 @@
             </ul>
         </div>
         <!-- BURGER MENU END  -->
-      <!-- CART START -->
-      <template class="cart-item-template">
-        <div class="cart-product-container">
-            <div class="cart-product-img-container">
-                <img src="" alt="">
-            </div>
-            <div class="product-info-container">
-                <label class="label" for="fid-">NAME</label>
-                <label class="label2" for="fid-">COLLECTION</label>
-                <p class="price-each"><span></span> DKK</p>
-                <div class="display-flex">
-                  <button class="minus" type="button">-</button>
-                    <input type="number" name="NAME-" id="fid-" min="0" max="20" />
-                    <button class="plus" type="button">+</button>
-                </div>
-            </div>
-    </template>
-    <!--END cart template-->
-    <aside id="cart" class="cart hidden">
-        <div class="cart-top"><h2>Cart(<span class="cart-qty2"></span>)</h2>
-        <div class="x"></div></div>
-        <form>
-            <div class="cart-content">
-                <h4>THE CART IS EMPTY</h4>
-            </div>
-            <div class="cart-extra-info">
-            <p class="shipping-info">Shipping & taxes calculated at checkout</p>
-            
-            <button class="checkoutbutton" type="submit"><a href="../html/checkout.html">Checkout<p class="totalPlacement">Total: <span class="cartTotal"> </span> DKK</p></a></button>
+  <!-- CART START -->
+  <template class="cart-item-template">
+    <div class="cart-product-container">
+        <div class="cart-product-img-container">
+            <img src="" alt="">
         </div>
-        </form>
-    </aside>
-    <!-- CART END -->
+        <div class="product-info-container">
+            <label class="label" for="fid-">NAME</label>
+            <label class="label2" for="fid-">COLLECTION</label>
+            <p class="price-each"><span></span> DKK</p>
+            <div class="display-flex">
+              <button class="minus" type="button">-</button>
+                <input type="number" name="NAME-" id="fid-" min="0" max="20" />
+                <button class="plus" type="button">+</button>
+            </div>
+        </div>
+</template>
+<!--END cart template-->
+<aside id="cart" class="cart show-cart">
+    <div class="cart-top"><h2>Cart(<span class="cart-qty2"></span>)</h2>
+    <div class="x"></div></div>
+    <form>
+        <div class="cart-content">
+            <h4>THE CART IS EMPTY</h4>
+        </div>
+        <div class="cart-extra-info">
+        <p class="shipping-info">Shipping & taxes calculated at checkout</p>
+        
+        <button class="checkoutbutton" type="submit"><a href="../html/checkout.html">Checkout <p class="totalPlacement">&bull;  <span class="cartTotal"> </span>DKK</p></a></button>
+    </div>
+    </form>
+</aside>
+<!-- CART END -->
     </nav>
 </header>
     <section class="banner top-banner">
@@ -123,7 +123,12 @@
             <a href="html/about.html">Read more</a>
         </div>
         <div class="usp">
-            <img class="vector" src="img/Vector-2.svg" alt="social impact icon" />
+            <svg id="text-container" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="1020" height="554">
+                <path id="text-curve" d="M872 116.63c-141.71-62.56-223.41 34.17-324.32 72.91C461 222.81 416.75 138.4 393 94c0 0-57.27-84.81-134.63 3.09S42 176.14 42 176.14" fill="none" stroke="none" stroke-miterlimit="10"/>
+                <text class="textpath" y="80" font-size="12">
+                    <textpath id="text-path" href="#text-curve" startOffset="10">ETHIOPIAN SPECIALTY GRADE COFFEE</textpath></text>
+                </svg>
+            <img class="vector" src="img/Vector-2.svg" alt="" />
             <h2>Social Impact</h2>
             <p>
                 Lorem ipsum dolor amet brooklyn commodo labo laboris air plant in
