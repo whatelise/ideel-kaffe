@@ -11,6 +11,78 @@ html {
   overflow-x: hidden;
 }
 
+/*PAGE LOADER START*/
+
+.loaderWrapper {position:block;
+  background-color: var(--cream);
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+}
+
+#loader {  z-index: 1;
+  margin-top: 15vh;
+  margin-bottom: 15vw;
+  width: 120px;
+  height: 120px;
+  border: 16px solid var(--white);
+  border-radius: 50%;
+  border-top: 16px solid var(--orange);
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+ /*Page appearing after load*/
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 0.7s;
+  animation-name: animatebottom;
+  animation-duration: 0.7s;
+}
+
+
+@-webkit-keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+/*PAGE LOADER END*/
+
 img {
   width: 100%;
 }

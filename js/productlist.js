@@ -13,12 +13,27 @@ function getData() {
   })
     .then((res) => res.json())
     .then((response) => {
+      hideloader();
+      console.log(Response);
+       this.dt = Response;
+       this.dataDisplay = this.dt.data;      
       showProducts(response);
       console.log(response);
     })
     .catch((err) => {
       console.error(err);
     });
+}
+
+function hideloader() {
+  console.log("hideloader");
+  document.querySelector("#loader").classList.add("fadeout");
+  document.querySelector(".loaderWrapper").classList.add("fadeout");
+  document.querySelector.offsetHeight;
+  document.querySelector("#loader").classList.add("hidden");
+  document.querySelector(".loaderWrapper").classList.add("hidden");
+  document.getElementById("myDiv").style.display = "block"; 
+  
 }
 
 getData();
