@@ -109,7 +109,6 @@ button {
   height: 94%;
   width: 100%;
   opacity: 0;
-  background-color: var(--blue);
 }
 .button-white {
   color: var(--white);
