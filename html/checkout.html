@@ -150,12 +150,12 @@
                         <p class="shipping-summary"><span class="strong shipping-summary-category">Ship to</span>Great
                             Russell St, 63, London WC1B 3DG, United Kingdom</p>
                         <h2 class="shipping-method">SHIPPING METHOD</h2>
-                        <div> <label class="container">Economy shipping - Tracked <span class="strong shipping-price">40 DKK</span>
-                                <input type="radio" name="radio"> 
+                        <div id="shipping-radio"> <label class="container">Economy shipping - Tracked <span class="strong shipping-price1">40 DKK</span>
+                                <input type="radio" name="radio" class="shipping shipping40" value="40"> 
                                 <span class="checkmark"></span>
                             </label>
-                            <label class="container">Express shipping - Tracked <span class="strong shipping-price">100 DKK</span>
-                                <input type="radio" name="radio">
+                            <label class="container">Express shipping - Tracked <span class="strong shipping-price1">100 DKK</span>
+                                <input type="radio" name="radio" class="shipping shipping100" value="100">
                                 <span class="checkmark"></span>
                             </label>
                         </div>
@@ -237,8 +237,13 @@
                 <div class="cart-content">
                     <h4>THE CART IS EMPTY</h4>
                 </div>
-                <div class="cart-extra-info blue">
-                    <p class="shipping-info">Shipping & taxes calculated at checkout</p>
+                <div class="shipping-info-green">
+                   <!--  <p class="shipping-info">Shipping & taxes calculated at checkout</p> -->
+                    <div class="shipping-calc shipping-placement ">Shipping: </div>
+                    <div class="shipping-price"><span class="">40</span>DKK </div>
+                </div>
+                    <div class="cart-extra-info blue">
+
 
                     <div class="checkoutbutton" type="submit">
                         <div class="total totalPlacement">TOTAL: </div>

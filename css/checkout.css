@@ -191,6 +191,32 @@ input::-webkit-outer-spin-button {
   padding-bottom: 2em;
 }
 
+.shipping-info-green {
+  position: relative;
+  background-color: var(--dark-green);
+  padding-top:2em;
+  padding-bottom: 2em;
+}
+.shipping-calc, .shipping-price {
+  color: var(--white);
+}
+
+.shipping-calc {
+  position: absolute;
+  top: 1.3em;
+  left:2em;
+}
+
+.shipping-price {
+  position: absolute;
+  font-size: 1em;
+  right:2em;
+  top: 1.3em;
+}
+.shipping-price span {
+  margin-right: 0.2em;
+}
+
 .total {
   position: absolute;
   top: 0.56em;
@@ -302,7 +328,7 @@ label.container {
     margin-right: 1.5em;
   }
 
-  .shipping-price {
+  .shipping-price1 {
     margin-left: 1em;
   }
 
@@ -360,6 +386,8 @@ background-color:var(--fadetext);
   .blue { 
     padding-bottom:120vh;   
     background-color:var(--blue);
+    padding-top: 0.6em;
+    margin-top: -1em;
   }
 
 .shipping-info {background-color:var(--dark-green);

@@ -161,15 +161,41 @@ function countCart() {
 
 function totalCart() {
   var totalCost = 0;
+
+  /*add shipping */
+const radioButtons = document.getElementById("shipping-radio")
   for (var index in CART.contents) {
     totalCost += CART.contents[index].price * CART.contents[index].qty;
+    if (document.body.contains(radioButtons)) {
+      document.querySelector(".shipping-price span").innerHTML= "&#x7e";
+      console.log("there are radio buttons");
+     const radioButton40 = document.querySelector(".shipping40");
+     const radioButton100 = document.querySelector(".shipping100");
+      radioButton40.addEventListener("click", () => {
+      let totalCost = 40;
+       totalCost += CART.contents[index].price * CART.contents[index].qty; 
+       console.log(totalCost);
+       document.querySelector(".cartTotal").textContent = `${totalCost}`
+       document.querySelector(".shipping-price span").textContent = 40;
+      })
+      radioButton100.addEventListener("click", () => {
+        console.log("shipping 100 clicked")
+       totalCost = 100;
+       totalCost += CART.contents[index].price * CART.contents[index].qty; 
+        document.querySelector(".cartTotal").textContent = `${totalCost}`;
+        document.querySelector(".shipping-price span").textContent = 100;
+    })}
+      /*add shipping end */
+
+  else {
+  totalCost += CART.contents[index].price * CART.contents[index].qty;
+  }
     document.querySelector(".cartTotal").textContent = `${totalCost}`;
     console.log(totalCost);
      document.querySelector(".cart-qty1").textContent = `${CART.contents[index].qty}`;
-    document.querySelector( ".cart-qty2").textContent = `${CART.contents[index].qty}` ;
-  }
-
+    document.querySelector( ".cart-qty2").textContent = `${CART.contents[index].qty}`;
+  
   return totalCost;
-}
+}}
 
 CART.init();
