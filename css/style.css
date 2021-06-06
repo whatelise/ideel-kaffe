@@ -40,7 +40,8 @@ nav {
 h1,
 h2,
 h6,
-button, .checkoutbutton {
+button,
+.checkoutbutton {
   font-family: "IBM Plex Mono", monospace;
 }
 
@@ -49,8 +50,9 @@ p,
 h3,
 form,
 .menu__item,
-.cart-extra-info, .express-checkout {
-  font-family: 'IBM Plex Sans', sans-serif;
+.cart-extra-info,
+.express-checkout {
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 h1 {
@@ -109,7 +111,6 @@ button {
 }
 .active {
   text-decoration: underline;
-  font-style: italic;
 }
 .nav-left {
   display: flex;
