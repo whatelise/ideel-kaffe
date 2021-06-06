@@ -16,14 +16,15 @@ var sticky = cart.offsetTop;
     cart.classList.remove("sticky");
   }
 } */
-  
+
 window.addEventListener("load", hideCart);
 
 function showCart() {
   console.log("showCart()");
   this.removeEventListener("click", showCart);
   document.querySelector("#cart").classList.add("show-cart");
-  document.querySelector(".cart-icon").addEventListener("click", showCart1);
+  document.querySelector(".cart-icon").addEventListener("click", hideCart);
+  document.querySelector(".x").addEventListener("click", hideCart);
 }
 
 function hideCart() {
@@ -31,7 +32,6 @@ function hideCart() {
   this.removeEventListener("click", hideCart);
   document.querySelector("#cart").classList.remove("show-cart");
   document.querySelector(".cart-icon").addEventListener("click", showCart);
-  document.querySelector(".x").addEventListener("click", hideCart);
 }
 
 const CART = {
@@ -44,7 +44,6 @@ const CART = {
     } else {
     }
     CART.sync();
-    
   },
   sync() {
     let _cart = JSON.stringify(CART.contents);
@@ -53,18 +52,21 @@ const CART = {
     CART.updateDOM();
   },
   updateDOM() {
-    countCart() 
-totalCart()
+    countCart();
+    totalCart();
     const cartcontentEl = document.querySelector(".cart-content");
     cartcontentEl.innerHTML = "";
-
     if (CART.contents.length === 0) {
       cartcontentEl.innerHTML = "<h4> THE CART IS EMPTY</h4>";
+      document.querySelector(".checkoutbutton").classList.add("hidden");
     } else {
       CART.contents.forEach((element) => {
         console.log(element);
-
-        const tempItem = document.querySelector(".cart-item-template").content;
+        const checkoutButton = document.querySelector(".checkoutbutton");
+        if (checkoutButton.classList.contains("hidden")) {
+          document.querySelector(".checkoutbutton").classList.remove("hidden");;
+        }        
+         const tempItem = document.querySelector(".cart-item-template").content;
         const itemCopy = tempItem.cloneNode(true);
 
         const id = element._id;
@@ -102,12 +104,12 @@ totalCart()
 
         const collectionEl = itemCopy.querySelector(".label2");
         collectionEl.textContent = element.collection;
-        itemCopy.querySelector(".cart-product-img-container img").src = element.productimage;
+        itemCopy.querySelector(".cart-product-img-container img").src =
+          element.productimage;
 
         cartcontentEl.appendChild(itemCopy);
       });
     }
-    
   },
   add(obj) {
     const index = CART.contents.findIndex((element) => element._id == obj._id);
@@ -124,7 +126,9 @@ totalCart()
   update(obj) {
     const index = CART.contents.findIndex((element) => element._id == obj._id);
     if (obj.qty === 0) {
-      CART.contents.splice(index, 1);
+      CART.contents.splice(index, 0);}
+      if (obj.qty < 0) {
+        CART.contents.splice(index, 1);
     } else {
       CART.contents[index].qty = obj.qty;
     }
@@ -145,14 +149,12 @@ totalCart()
     indexObj.qty++;
     CART.update(indexObj);
   },
-
-  
 };
 var totalCount = 0;
 function countCart() {
   var totalCount = 0;
   for (var index in CART.contents) {
-    totalCount+= CART.contents[index].qty;
+    totalCount += CART.contents[index].qty;
   }
   return totalCount;
 }
@@ -160,15 +162,14 @@ function countCart() {
 function totalCart() {
   var totalCost = 0;
   for (var index in CART.contents) {
-    totalCost+= CART.contents[index].price * CART.contents[index].qty;
- document.querySelector(".cartTotal").textContent=`${totalCost}`;
- console.log(totalCost);
- document.querySelector(".cart-qty1").textContent= `${CART.contents[index].qty}`;
- document.querySelector(".cart-qty2").textContent= `${CART.contents[index].qty}`;
-}
+    totalCost += CART.contents[index].price * CART.contents[index].qty;
+    document.querySelector(".cartTotal").textContent = `${totalCost}`;
+    console.log(totalCost);
+     document.querySelector(".cart-qty1").textContent = `${CART.contents[index].qty}`;
+    document.querySelector( ".cart-qty2").textContent = `${CART.contents[index].qty}` ;
+  }
 
- return totalCost;
+  return totalCost;
 }
-  
 
 CART.init();

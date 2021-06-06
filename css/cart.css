@@ -74,6 +74,7 @@
   }
   
 
+
 .cart-product-container {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -151,6 +152,25 @@
     text-transform: capitalize;
     font-weight: 400;
   }
+
+  .checkoutbutton > * {
+    padding: 1em;
+    font-size: 1em;
+    font-weight: 500;
+  }
+
+  .checkoutbutton p {
+    display: inline-flex;
+    font-weight: 500;
+    padding-left: 0.4em;
+  }
+
+  .checkoutbutton p span {
+    padding-left: 0.4em;
+  }
+
+
+
   .checkoutbutton a:hover {
     color: white;
   }
@@ -159,4 +179,10 @@
     right: 0%;
    }
 
-   
+   .hidden {
+     display: none;
+   }
+
+   form p {
+     padding-top: 0;
+   }
