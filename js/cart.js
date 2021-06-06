@@ -1,6 +1,6 @@
 /* 
-localStorage.clear(); */
-/* window.onscroll = function() {myFunction()};
+
+window.onscroll = function() {myFunction()};
 
 
 var navbar = document.getElementById("cart");
@@ -9,29 +9,29 @@ var navbar = document.getElementById("cart");
 var sticky = cart.offsetTop;
  */
 
-function myFunction() {
+/* function myFunction() {
   if (window.pageYOffset >= sticky) {
     cart.classList.add("sticky")
   } else {
     cart.classList.remove("sticky");
   }
-}
-  
-window.addEventListener("load", hideCart);
+} */
 
-function hideCart() {
-  console.log("hideCart()");
-  this.removeEventListener("click", hideCart);
-  document.querySelector("#cart").classList.add("hidden");
-  document.querySelector(".cart-icon").addEventListener("click", showCart);
-}
+window.addEventListener("load", hideCart);
 
 function showCart() {
   console.log("showCart()");
   this.removeEventListener("click", showCart);
-  document.querySelector("#cart").classList.remove("hidden");
+  document.querySelector("#cart").classList.add("show-cart");
   document.querySelector(".cart-icon").addEventListener("click", hideCart);
   document.querySelector(".x").addEventListener("click", hideCart);
+}
+
+function hideCart() {
+  console.log("hideCart()");
+  this.removeEventListener("click", hideCart);
+  document.querySelector("#cart").classList.remove("show-cart");
+  document.querySelector(".cart-icon").addEventListener("click", showCart);
 }
 
 const CART = {
@@ -44,7 +44,6 @@ const CART = {
     } else {
     }
     CART.sync();
-    
   },
   sync() {
     let _cart = JSON.stringify(CART.contents);
@@ -53,18 +52,21 @@ const CART = {
     CART.updateDOM();
   },
   updateDOM() {
-    countCart() 
-totalCart()
+    countCart();
+    totalCart();
     const cartcontentEl = document.querySelector(".cart-content");
     cartcontentEl.innerHTML = "";
-    document.querySelector(".cartTotal").textContent = CART.contents.length;
     if (CART.contents.length === 0) {
       cartcontentEl.innerHTML = "<h4> THE CART IS EMPTY</h4>";
+      document.querySelector(".checkoutbutton").classList.add("hidden");
     } else {
       CART.contents.forEach((element) => {
         console.log(element);
-
-        const tempItem = document.querySelector(".cart-item-template").content;
+        const checkoutButton = document.querySelector(".checkoutbutton");
+        if (checkoutButton.classList.contains("hidden")) {
+          document.querySelector(".checkoutbutton").classList.remove("hidden");;
+        }        
+         const tempItem = document.querySelector(".cart-item-template").content;
         const itemCopy = tempItem.cloneNode(true);
 
         const id = element._id;
@@ -102,12 +104,12 @@ totalCart()
 
         const collectionEl = itemCopy.querySelector(".label2");
         collectionEl.textContent = element.collection;
-        itemCopy.querySelector(".cart-product-img-container img").src = element.productimage;
+        itemCopy.querySelector(".cart-product-img-container img").src =
+          element.productimage;
 
         cartcontentEl.appendChild(itemCopy);
       });
     }
-    
   },
   add(obj) {
     const index = CART.contents.findIndex((element) => element._id == obj._id);
@@ -124,8 +126,9 @@ totalCart()
   update(obj) {
     const index = CART.contents.findIndex((element) => element._id == obj._id);
     if (obj.qty === 0) {
-      CART.contents.splice(index, 1);
-      document.querySelector(".cart-qty").textContent= `${CART.contents[index].qty}`;
+      CART.contents.splice(index, 0);}
+      if (obj.qty < 0) {
+        CART.contents.splice(index, 1);
     } else {
       CART.contents[index].qty = obj.qty;
     }
@@ -146,14 +149,12 @@ totalCart()
     indexObj.qty++;
     CART.update(indexObj);
   },
-
-  
 };
 var totalCount = 0;
 function countCart() {
   var totalCount = 0;
   for (var index in CART.contents) {
-    totalCount+= CART.contents[index].qty;
+    totalCount += CART.contents[index].qty;
   }
   return totalCount;
 }
@@ -161,11 +162,14 @@ function countCart() {
 function totalCart() {
   var totalCost = 0;
   for (var index in CART.contents) {
-    totalCost+= CART.contents[index].price * CART.contents[index].qty;
- document.querySelector(".cartTotal").textContent=`${totalCost}`;
- document.querySelector(".cart-qty").textContent= `${CART.contents[index].qty}`}
+    totalCost += CART.contents[index].price * CART.contents[index].qty;
+    document.querySelector(".cartTotal").textContent = `${totalCost}`;
+    console.log(totalCost);
+     document.querySelector(".cart-qty1").textContent = `${CART.contents[index].qty}`;
+    document.querySelector( ".cart-qty2").textContent = `${CART.contents[index].qty}` ;
+  }
+
   return totalCost;
 }
-  
 
 CART.init();
