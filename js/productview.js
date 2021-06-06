@@ -34,7 +34,7 @@ function showProducts(product) {
   copy.querySelector(".shop-button").setAttribute("data-id", product._id);
   copy.querySelector(".shop-button").addEventListener("click", () => {
     CART.add(product);
-    hideCart();
+    showCart();
     
     
   });
