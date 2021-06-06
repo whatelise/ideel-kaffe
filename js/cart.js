@@ -1,6 +1,6 @@
 /* 
-localStorage.clear(); */
-/* window.onscroll = function() {myFunction()};
+
+window.onscroll = function() {myFunction()};
 
 
 var navbar = document.getElementById("cart");
@@ -56,12 +56,10 @@ const CART = {
     countCart() 
 totalCart()
     const cartcontentEl = document.querySelector(".cart-content");
-    const cartQty =  document.querySelector(".cart-qty1");
-    cartcontentEl.innerHTML = "0";
-    document.querySelector(".cartTotal").textContent = CART.contents.length;
+    cartcontentEl.innerHTML = "";
+
     if (CART.contents.length === 0) {
       cartcontentEl.innerHTML = "<h4> THE CART IS EMPTY</h4>";
-      /* cartQty.innerHTML = "0"; */
     } else {
       CART.contents.forEach((element) => {
         console.log(element);
@@ -127,7 +125,6 @@ totalCart()
     const index = CART.contents.findIndex((element) => element._id == obj._id);
     if (obj.qty === 0) {
       CART.contents.splice(index, 1);
-      document.querySelector(".cart-qty").textContent= `${CART.contents[index].qty}`;
     } else {
       CART.contents[index].qty = obj.qty;
     }
@@ -169,7 +166,8 @@ function totalCart() {
  document.querySelector(".cart-qty1").textContent= `${CART.contents[index].qty}`;
  document.querySelector(".cart-qty2").textContent= `${CART.contents[index].qty}`;
 }
-  return totalCost;
+
+ return totalCost;
 }
   
 

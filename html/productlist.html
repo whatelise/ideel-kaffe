@@ -50,36 +50,37 @@
           <!-- BURGER MENU END  -->
           <!-- CART START -->
           <template class="cart-item-template">
-              <div class="cart-product-container">
-                  <div class="cart-product-img-container">
-                      <img src="" alt="">
-                  </div>
-                  <div class="product-info-container">
-                      <label class="label" for="fid-">NAME</label>
-                      <label class="label2" for="fid-">COLLECTION</label>
-                      <p class="price-each"><span></span> DKK</p>
-                      <div class="display-flex"><button class="minus" type="button">-</button>
-                          <input type="number" name="NAME-" id="fid-" min="0" max="20" />
-                          <button class="plus" type="button">+</button>
-                      </div>
-                  </div>
-          </template>
-          <!--END cart template-->
-          <aside id="cart" class="cart hidden">
+            <div class="cart-product-container">
+                <div class="cart-product-img-container">
+                    <img src="" alt="">
+                </div>
+                <div class="product-info-container">
+                    <label class="label" for="fid-">NAME</label>
+                    <label class="label2" for="fid-">COLLECTION</label>
+                    <p class="price-each"><span></span> DKK</p>
+                    <div class="display-flex">
+                      <button class="minus" type="button">-</button>
+                        <input type="number" name="NAME-" id="fid-" min="0" max="20" />
+                        <button class="plus" type="button">+</button>
+                    </div>
+                </div>
+        </template>
+        <!--END cart template-->
+        <aside id="cart" class="cart hidden">
             <div class="cart-top"><h2>Cart(<span class="cart-qty2"></span>)</h2>
             <div class="x"></div></div>
-              <form>
-                  <div class="cart-content">
-                      <h4>THE CART IS EMPTY</h4>
-                  </div>
-                  <div class="cart-extra-info">
-                  <p class="shipping-info">Shipping & taxes calculated at checkout</p>
-                  
-                  <button class="checkoutbutton" type="submit"><a href="html/checkout.html">Checkout<p class="totalPlacement">Total: <span class="cartTotal"> </span> DKK</p></a></button>
-              </div>
-              </form>
-          </aside>
-          <!-- CART END -->
+            <form>
+                <div class="cart-content">
+                    <h4>THE CART IS EMPTY</h4>
+                </div>
+                <div class="cart-extra-info">
+                <p class="shipping-info">Shipping & taxes calculated at checkout</p>
+                
+                <button class="checkoutbutton" type="submit"><a href="../html/checkout.html">Checkout<p class="totalPlacement">Total: <span class="cartTotal"> </span> DKK</p></a></button>
+            </div>
+            </form>
+        </aside>
+        <!-- CART END -->
       </nav>
   </header>
     <main>
