@@ -60,6 +60,7 @@
     align-items: center;
     background-color: var(--dark-green);
     color: var(--white);
+    padding-top: 1em;
   }
 
   .cart-extra-info > * {
@@ -169,6 +170,7 @@
     padding-left: 0.4em;
   }
 
+  
 
 
   .checkoutbutton a:hover {
