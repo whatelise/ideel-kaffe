@@ -9,28 +9,28 @@ var navbar = document.getElementById("cart");
 var sticky = cart.offsetTop;
  */
 
-function myFunction() {
+/* function myFunction() {
   if (window.pageYOffset >= sticky) {
     cart.classList.add("sticky")
   } else {
     cart.classList.remove("sticky");
   }
-}
+} */
   
-window.addEventListener("load", showCart);
-
-function hideCart() {
-  console.log("hideCart()");
-  this.removeEventListener("click", hideCart);
-  document.querySelector("#cart").classList.add("hidden");
-  document.querySelector(".cart-icon").addEventListener("click", showCart);
-}
+window.addEventListener("load", hideCart);
 
 function showCart() {
   console.log("showCart()");
   this.removeEventListener("click", showCart);
-  document.querySelector("#cart").classList.remove("hidden");
-  document.querySelector(".cart-icon").addEventListener("click", hideCart);
+  document.querySelector("#cart").classList.add("show-cart");
+  document.querySelector(".cart-icon").addEventListener("click", showCart1);
+}
+
+function hideCart() {
+  console.log("hideCart()");
+  this.removeEventListener("click", hideCart);
+  document.querySelector("#cart").classList.remove("show-cart");
+  document.querySelector(".cart-icon").addEventListener("click", showCart);
   document.querySelector(".x").addEventListener("click", hideCart);
 }
 
