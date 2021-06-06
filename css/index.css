@@ -88,7 +88,7 @@ button {
   align-items: center;
   background-color: var(--orange);
   color: var(--white);
-  padding: 8em 20vw;
+  padding: 10em 20vw;
   /*  mix-blend-mode: difference; */
 }
 
@@ -169,9 +169,13 @@ button {
 }
 .textpath {
   fill: var(--orange);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 1em;
 }
 .textpath2 {
   fill: var(--orange);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 1em;
 }
 /* PRODUCT DISPLAY*/
 .product-display {
@@ -340,5 +344,21 @@ button {
     left: -120vw;
     top: 130vh;
     transform: rotate(180deg);
+  }
+
+  .subscribe-banner {
+    padding: 8em 10vw;
+    /*  mix-blend-mode: difference; */
+  }
+
+  .sub-1,
+  .sub-2,
+  .sub-3,
+  .sub-4 {
+    display: none;
+  }
+
+  .sub-text {
+    font-size: 1.4em;
   }
 }

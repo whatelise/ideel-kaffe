@@ -17,6 +17,7 @@ main {
   grid-template-rows: 30% 70%;
   color: var(--white);
   padding-left: 30px;
+  padding-bottom: 3em;
   height: 76vh;
 }
 
@@ -96,6 +97,10 @@ h6 {
   background-color: transparent;
   text-transform: uppercase;
   display: block;
+}
+
+.sub-button {
+  font-size: 1em;
 }
 
 .product-view button {

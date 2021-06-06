@@ -87,7 +87,6 @@ a {
   text-decoration: none;
   color: inherit;
   font-size: 0.8em;
- 
 }
 
 .flex {
@@ -224,7 +223,7 @@ form p {
 
 /* DESKTOP */
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 900px) {
   .hamburger-menu {
     display: none;
   }
@@ -232,7 +231,7 @@ form p {
 
 /* MOBILE */
 
-@media screen and (max-width: 699px) {
+@media screen and (max-width: 900px) {
   .to-top {
     width: 100%;
   }
@@ -244,18 +243,20 @@ form p {
     justify-items: center;
     padding: 0;
   }
+
   #global-nav {
     position: fixed;
     width: 100%;
     z-index: 99;
   }
+
   .logo {
     width: 10vw;
     padding: 10px;
   }
 
   .top-banner {
-    padding-top: 4em;
+    padding-top: 5em;
   }
 
   a {
