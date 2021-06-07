@@ -179,10 +179,14 @@ button {
 }
 /* PRODUCT DISPLAY*/
 .product-display {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 10vw;
+  display: flex;
+  flex-wrap: wrap;
+  grid-column-gap: 6vw;
   padding: 3em;
+}
+.product-container img {
+  height: 20em;
+  width: auto;
 }
 
 .product-container > * {
@@ -301,7 +305,7 @@ button {
     background-position: center;
     color: white;
     margin: 0;
-    height: 100vh;
+    height: 70vh;
   }
 
   .farmer-banner {

@@ -399,4 +399,7 @@ form p {
     margin-bottom: 2em;
     margin-left: 0vw;
   }
+  .to-top {
+    display: none;
+  }
 }
