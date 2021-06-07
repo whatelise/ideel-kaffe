@@ -10,10 +10,10 @@
   height: 100%;
   margin: 0;
   list-style: none;
-  background-color: var(--cream) !important;
+  background-color: var(--cream);
   transition-duration: 0.3s;
   color: var(--black);
-  z-index: 99;
+  z-index: 199;
   right: -40%;
 }
 
