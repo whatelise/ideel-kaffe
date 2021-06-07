@@ -1,23 +1,4 @@
-/* 
-
-window.onscroll = function() {myFunction()};
-
-
-var navbar = document.getElementById("cart");
-
-
-var sticky = cart.offsetTop;
- */
-
-/* function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    cart.classList.add("sticky")
-  } else {
-    cart.classList.remove("sticky");
-  }
-} */
-
-window.addEventListener("load", hideCart);
+window.addEventListener("load", hideCart());
 
 function showCart() {
   console.log("showCart()");
@@ -132,8 +113,6 @@ const CART = {
     } else {
       CART.contents[index].qty = obj.qty;
     }
-    // const inputEl = document.querySelector("#fid-" + obj._id);
-    // CART.contents[index].qty = inputEl.valueAsNumber;
 
     CART.sync();
   },
@@ -160,9 +139,8 @@ function countCart() {
 }
 
 function totalCart() {
-  var totalCost = 0;
-
   /*add shipping */
+  var totalCost = 0;
 const radioButtons = document.getElementById("shipping-radio")
   for (var index in CART.contents) {
     totalCost += CART.contents[index].price * CART.contents[index].qty;

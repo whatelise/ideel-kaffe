@@ -139,6 +139,10 @@ h2 {
   text-transform: uppercase;
 }
 
+.cart {
+  background-color: var(--cream);
+}
+
 h3 {
   font-size: 0.5em;
   font-weight: 200;
