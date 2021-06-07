@@ -13,16 +13,18 @@ html {
 
 /*PAGE LOADER START*/
 
-.loaderWrapper {position:block;
+.loaderWrapper {
+  position: block;
   background-color: var(--cream);
- display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   top: 0;
   left: 0;
 }
 
-#loader {  z-index: 1;
+#loader {
+  z-index: 1;
   margin-top: 15vh;
   margin-bottom: 15vw;
   width: 120px;
@@ -50,7 +52,7 @@ html {
     transform: rotate(360deg);
   }
 }
- /*Page appearing after load*/
+/*Page appearing after load*/
 .animate-bottom {
   position: relative;
   -webkit-animation-name: animatebottom;
@@ -58,7 +60,6 @@ html {
   animation-name: animatebottom;
   animation-duration: 0.7s;
 }
-
 
 @-webkit-keyframes animatebottom {
   from {
@@ -327,7 +328,7 @@ form p {
   }
 
   .logo {
-    width: 10vw;
+    width: 3.55em;
     padding: 10px;
   }
 
