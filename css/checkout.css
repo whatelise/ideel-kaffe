@@ -1,8 +1,8 @@
 main {
-    width: 100vw;
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-  }
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
 
 /* CART SUMMARY */
 .cart {
@@ -15,35 +15,30 @@ main {
   margin: 0;
   list-style: none;
   background-color: var(--cream);
-  transition-duration: .3s;
+  transition-duration: 0.3s;
   color: var(--black);
   z-index: 99;
-  
-  
-}  
+}
 
 .x {
-height: 0.5em;
-  width: 0.5em; 
+  height: 0.5em;
+  width: 0.5em;
   position: absolute;
   float: right;
   top: 0.2em;
-   right: 3em
-    }
+  right: 3em;
+}
 
 .x:after {
-  font-size:3.2em;
-  width:100%;
-  content: '\d7';
+  font-size: 3.2em;
+  width: 100%;
+  content: "\d7";
   color: var(--white);
- 
 }
-
 
 .cart-top {
-  visibility:hidden
+  visibility: hidden;
 }
-
 
 .cart-content h4 {
   text-align: center;
@@ -69,7 +64,6 @@ height: 0.5em;
   top: 0;
   transition-duration: 0s;
 }
-
 
 .cart-product-container {
   display: grid;
@@ -127,12 +121,12 @@ input::-webkit-outer-spin-button {
 }
 
 .display-flex > * {
-    width: 100%;
+  width: 100%;
 }
 
 .cart .price-each {
   margin-top: 0;
-  padding-top:0;
+  padding-top: 0;
 }
 .cart .label2 {
   margin-top: 10px;
@@ -141,7 +135,6 @@ input::-webkit-outer-spin-button {
   text-transform: capitalize;
   font-weight: 400;
 }
-
 
 /* .checkoutbutton > * {
    font-size: 1em;
@@ -170,47 +163,50 @@ input::-webkit-outer-spin-button {
  */
 /* CART SUMMARY END */
 
-  .info {
-    display: block;
-  }
-  .search {
-    width: calc(100%);
-    position: relative;
-    height: 60px;
-  }
-  .info > * {
-    margin-bottom: 0em;
-    margin-top: 1em;
-  }
-  .checkoutbutton {
-    position: relative;
-    margin-top: 1em;
-  }
+.info {
+  display: block;
+}
+.search {
+  width: calc(100%);
+  position: relative;
+  height: 60px;
+}
+.info > * {
+  margin-bottom: 0em;
+  margin-top: 1em;
+}
+.checkoutbutton {
+  position: relative;
+  margin-top: 1em;
+}
 
-.express-checkout {text-align:center; position: relative;
+.express-checkout {
+  text-align: center;
+  position: relative;
   padding-bottom: 2em;
 }
 
 .shipping-info-green {
   position: relative;
   background-color: var(--dark-green);
-  padding-top:2em;
+  padding-top: 2em;
   padding-bottom: 2em;
 }
-.shipping-calc, .shipping-price {
+.shipping-calc,
+.shipping-price {
   color: var(--white);
 }
 
 .shipping-calc {
   position: absolute;
   top: 1.3em;
-  left:2em;
+  left: 2em;
 }
 
 .shipping-price {
   position: absolute;
   font-size: 1em;
-  right:2em;
+  right: 2em;
   top: 1.3em;
 }
 .shipping-price span {
@@ -220,22 +216,23 @@ input::-webkit-outer-spin-button {
 .total {
   position: absolute;
   top: 0.56em;
-  left:2em;
+  left: 2em;
 }
 
 .total-price {
   position: absolute;
   font-size: 2.4em;
-  right:0.8em;
+  right: 0.8em;
 }
 .total-price span {
   margin-right: 0.2em;
 }
 
-.label-name, label.container {
+.label-name,
+label.container {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 0.8em;
-  font-weight:200;
+  font-weight: 200;
 }
 
 label.container {
@@ -243,284 +240,283 @@ label.container {
   margin-top: 1em;
 }
 
- .express-checkout-icons {
+.express-checkout-icons {
   display: grid;
-   grid-template-columns: 1fr 1fr 1fr 1fr;
-   grid-gap: 0.2em;
-   padding-left: 6vw;
-   padding-right: 6vw;
-   padding-bottom: 2em;
- }
- .express-checkout-icons img {
- height: 2em;
- }
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 0.2em;
+  padding-left: 6vw;
+  padding-right: 6vw;
+  padding-bottom: 2em;
+}
+.express-checkout-icons img {
+  height: 2em;
+}
 
-  input::placeholder, .info input  {
-      color: var(--fadetext);
-      font-family: "IBM Plex Sans", sans-serif;
-      }
+input::placeholder,
+.info input {
+  color: var(--fadetext);
+  font-family: "IBM Plex Sans", sans-serif;
+}
 
+.info input {
+  background-color: var(--white);
+}
 
-  .info input {
-      background-color:var(--white);
-  }
-  
-  .finalCheckout h1 {
-    padding-top: 1em;
-  }
-  
-  .finalCheckout > * {
-    padding-bottom: 1em;
-  }
-  
-  .firstName,
-  .lastName {
-    width: calc(50%);
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .firstName {
-    margin-right: 6%;
-   }
-  
-  .fullName {
-    width: 100%;
-    display: inline-flex;
-    align-content: space-between;
-  }
-  
-  .search input,
-  .firstName input,
-  .lastName input {
-    width: 100%;
-    color: black;
-    border: none;
-    outline: none;
-    border: 1px solid black; 
-    margin-top: 2em;
-    padding-top: 0.8em;
-    padding-bottom: 0.8em;
-    padding-left:1em;
-  }
-  
-  .search label,
-  .firstName label,
-  .lastName label {
-    position: absolute;
-    bottom: 0px;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-   
-  }
+.finalCheckout h1 {
+  padding-top: 1em;
+}
 
-  .shipping-method {
-    margin-top: 2.4em;
-  }
+.finalCheckout > * {
+  padding-bottom: 1em;
+}
 
-  .shipping-summary {
+.firstName,
+.lastName {
+  width: calc(50%);
+  position: relative;
+  overflow: hidden;
+}
+
+.firstName {
+  margin-right: 6%;
+}
+
+.fullName {
+  width: 95%;
+  display: inline-flex;
+  align-content: space-between;
+}
+
+.search input,
+.firstName input,
+.lastName input {
+  width: 90%;
+  color: black;
+  border: none;
+  outline: none;
+  border: 1px solid black;
+  margin-top: 2em;
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  padding-left: 1em;
+}
+
+.search label,
+.firstName label,
+.lastName label {
+  position: absolute;
+  bottom: 0px;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.shipping-method {
+  margin-top: 2.4em;
+}
+
+.shipping-summary {
   margin-top: 0;
   padding-top: 0.4em;
 }
-  .shipping-summary-category {
-    margin-right: 1.5em;
-  }
+.shipping-summary-category {
+  margin-right: 1.5em;
+}
 
-  .shipping-price1 {
-    margin-left: 1em;
-  }
+.shipping-price1 {
+  margin-left: 1em;
+}
 
+.btn-checkout-container {
+  text-align: center;
+  width: 75%;
+}
 
+.btn {
+  text-transform: uppercase;
+  color: white;
+  margin: 0.5em;
+  padding: 1em;
+  border: none;
+}
 
-  .btn-checkout-container {
-    text-align: center;
-    width: 75%;
-  }
+#prev {
+  background-color: var(--fadetext);
+}
 
-  .btn {
-    text-transform: uppercase;
-    color: white;
-    margin: 0.5em; 
-    padding: 1em;
-    border: none;
-  }
+.btn:focus {
+  outline: 0;
+}
 
-  #prev {
-background-color:var(--fadetext);
-  }
+.btn:active {
+  transform: scale(0.98);
+}
 
-  .btn:focus {
-    outline: 0;
-  }
-  
-  .btn:active {
-    transform: scale(0.98);
-  }
-  
-  .btn:disabled {
-    display: none;
-  }
+.btn:disabled {
+  display: none;
+}
 
-  .btn-checkout {
-    text-align: center;
-  }
+.btn-checkout {
+  text-align: center;
+}
 
-  section {
-    margin-left: 6vw;
-    margin-right: 6vw;
-    margin-top:2em
-  }
-  
-  .cartOverview {
-    background-color: skyblue;
-    padding-left: 5vw;
-    padding-right: 5vw;
-  }
-  .cart {
-    display: block;
-  }
+section {
+  margin-left: 6vw;
+  margin-right: 6vw;
+  margin-top: 2em;
+}
 
+.cartOverview {
+  background-color: skyblue;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+.cart {
+  display: block;
+}
 
-  .blue { 
-    padding-bottom:120vh;   
-    background-color:var(--blue);
-    padding-top: 0.6em;
-    margin-top: -1em;
-  }
+.blue {
+  padding-bottom: 80vh;
+  background-color: var(--blue);
+  padding-top: 0.6em;
+  margin-top: -1em;
+  margin-bottom: 10px;
+}
 
-.shipping-info {background-color:var(--dark-green);
-padding-top: 1.5em;
-padding-bottom:1.5em;}
+.shipping-info {
+  background-color: var(--dark-green);
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
 
-  h4 span {
-    font-weight: 600;
-  }
-  .progress-container {
-    display: flex;
-    position: relative;
-    margin-bottom: 30px;
-    text-align: center;
-  }
-  
+h4 span {
+  font-weight: 600;
+}
+.progress-container {
+  display: flex;
+  position: relative;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
 /*PAYMNT PROGRESS BREADCRUMBS*/
-  .progress {
-    background-color: black;
-    position: absolute;
-  }
-  
-  .circle {
-    font-family: "IBM Plex Mono", monospace;
-    height: 1em;
-    color: lightgray;
-    transition: 0.4s ease;
-    padding-right: 0.4em;
-    padding-left: 0.2em;
-    font-size: 1em;
-    font-weight: 300;
-    text-transform: uppercase;
-  }
+.progress {
+  background-color: black;
+  position: absolute;
+}
 
-  .circle.active {
-    color: var(--orange);
-    background-color: white;
-  }
-  
-  .progressPlacement {
-    padding-bottom: 0em;
-  }
-  
-  .mask {
-    overflow: hidden;
-  }
-  
-  #formContainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column-gap: 5%;
-    width: 400%;
-    transition: 0.4s ease;
-  }
-  
-  .info {
-    overflow: hidden;
-    padding-bottom: 1em;
-    transition: 0.4s ease;
-  }
-  .clickNext {
-    transform: translateX(-100%);
-    transition: 0.4s ease;
-  }
-  
-  .clickPrev {
-    transform: translateX(100%);
-    transition: 0.4s ease;
-  }
-  
-  .info2 {
-    position: fl;
-  }
-  
-  /* PAYMENT RADIO BUTTONS */
-  .container {
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    cursor: pointer;
-  }
-  
-  /* Hide the browser's default radio button */
-  .container input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-  }
-  
-  /* Create a custom radio button */
-  .checkmark {
-    position: absolute;
-    top: 0.2em;
-    left: 0;
-    height: 1em;
-    width: 1em;
-    background-color: #eee;
-    border-radius: 50%;
-  }
-  
-  /* On mouse-over, add background color */
-  .container:hover input ~ .checkmark {
-    background-color: #ccc;
-  }
-  
-  /* When the radio button is checked */
-  .container input:checked ~ .checkmark {
-    background-color: dimgray;
-  }
-  
-  /* Create the indicator (the dot/circle - hidden when not checked) */
-  .checkmark:after {
-    content: "";
-    position: absolute;
-    display: none;
-  }
-  
-  /* Show the dot when checked */
-  .container input:checked ~ .checkmark:after {
-    display: block;
-  }
-  
-  /* Style the indicator dot */
-  .container .checkmark:after {
-    top: 0.25em;
-    left: 0.25em;
-    width: 0.5em;
-    height: 0.5em;
-    border-radius: 50%;
-    background: white;
-  }
-  
-  .dissapear {
-    opacity: 0;
-    transition: all 0.28s ease;
-  }
+.circle {
+  font-family: "IBM Plex Mono", monospace;
+  height: 1em;
+  color: lightgray;
+  transition: 0.4s ease;
+  padding-right: 0.4em;
+  padding-left: 0.2em;
+  font-size: 1em;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.circle.active {
+  color: var(--orange);
+  background-color: white;
+}
+
+.progressPlacement {
+  padding-bottom: 0em;
+}
+
+.mask {
+  overflow: hidden;
+}
+
+#formContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 5%;
+  width: 400%;
+  transition: 0.4s ease;
+}
+
+.info {
+  overflow: hidden;
+  padding-bottom: 1em;
+  transition: 0.4s ease;
+}
+.clickNext {
+  transform: translateX(-100%);
+  transition: 0.4s ease;
+}
+
+.clickPrev {
+  transform: translateX(100%);
+  transition: 0.4s ease;
+}
+
+.info2 {
+  position: fl;
+}
+
+/* PAYMENT RADIO BUTTONS */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0.2em;
+  left: 0;
+  height: 1em;
+  width: 1em;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked */
+.container input:checked ~ .checkmark {
+  background-color: dimgray;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the dot when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator dot */
+.container .checkmark:after {
+  top: 0.25em;
+  left: 0.25em;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 50%;
+  background: white;
+}
+
+.dissapear {
+  opacity: 0;
+  transition: all 0.28s ease;
+}

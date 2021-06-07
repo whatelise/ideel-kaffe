@@ -77,7 +77,7 @@ function showProducts(products) {
 
     copy.querySelector(
       ".viewProduct"
-    ).href = `../html/productview.html?products=${product._id}`;
+    ).href = `html/productview.html?products=${product._id}`;
 
     if (product.intensity == 5) {
       console.log("product.intensity");
