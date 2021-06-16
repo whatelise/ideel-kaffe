@@ -342,12 +342,14 @@ button {
     left: -15vw;
     top: 80vh;
     transform: rotate(180deg);
+    overflow: hidden;
   }
   .svg2 {
     position: absolute;
     left: -120vw;
     top: 130vh;
     transform: rotate(180deg);
+    overflow: hidden;
   }
 
   .subscribe-banner {
