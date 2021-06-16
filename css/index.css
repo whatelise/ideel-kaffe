@@ -182,7 +182,8 @@ button {
   display: flex;
   flex-wrap: wrap;
   grid-column-gap: 6vw;
-  padding: 3em;
+  justify-content: center;
+  padding: 5vw;
 }
 .product-container img {
   height: 20em;
