@@ -339,18 +339,18 @@ button {
     padding-right: 0;
   }
   .svg1 {
-    position: absolute;
+    /* position: absolute;
     left: -15vw;
     top: 80vh;
-    transform: rotate(180deg);
-    display: hidden;
+    transform: rotate(180deg); */
+    display: none;
   }
   .svg2 {
-    position: absolute;
+    /* position: absolute;
     left: -120vw;
     top: 130vh;
-    transform: rotate(180deg);
-    display: hidden;
+    transform: rotate(180deg); */
+    display: none;
   }
 
   .subscribe-banner {
