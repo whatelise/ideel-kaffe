@@ -33,12 +33,11 @@ main {
   justify-self: end;
   grid-area: img;
   padding-right: 60px;
+  display: flex;
+  justify-content: center;
 }
 
 .productImage {
-  height: 40vw;
-  width: auto;
-  align-self: center;
   padding-top: 1vw;
   padding-bottom: 2vw;
 }
@@ -248,8 +247,12 @@ h6 {
     display: flex;
     flex-direction: column;
     padding-bottom: 2em;
-    /* height: 100%; */
     justify-content: center;
+    /* height: 100%; */
+  }
+  .image-container {
+    justify-content: center;
+    display: flex;
   }
   .productImage {
     height: 75vw;
