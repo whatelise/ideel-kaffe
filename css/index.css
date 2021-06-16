@@ -335,22 +335,22 @@ button {
   .product-display {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 0em;
-    margin-right: 0em;
+    padding-left: 0;
+    padding-right: 0;
   }
   .svg1 {
     position: absolute;
     left: -15vw;
     top: 80vh;
     transform: rotate(180deg);
-    overflow: hidden;
+    display: hidden;
   }
   .svg2 {
     position: absolute;
     left: -120vw;
     top: 130vh;
     transform: rotate(180deg);
-    overflow: hidden;
+    display: hidden;
   }
 
   .subscribe-banner {
