@@ -168,6 +168,8 @@ button {
     display: flex;
     flex-direction: column;
     padding-bottom: 2em;
+    justify-content: center;
+    grid-gap: 0;
   }
 
   .circleEmpty {
@@ -180,10 +182,10 @@ button {
     width: 15px;
     margin-left: 20px;
   }
-  .productImage {
+  /* .productImage {
     height: 22em;
     width: auto;
-  }
+  } */
   .shipping-banner a {
     font-size: 0.9em;
   }
