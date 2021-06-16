@@ -40,6 +40,8 @@ main {
 .productImage {
   padding-top: 1vw;
   padding-bottom: 2vw;
+  width: auto;
+  height: 30em;
 }
 h6 {
   padding: 0;
@@ -282,7 +284,7 @@ h6 {
   }
 
   h2 {
-    font-size: 0.8em;
+    font-size: 3vw;
   }
   .landfills {
     padding: 20px;
