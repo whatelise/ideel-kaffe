@@ -2,7 +2,6 @@ main {
   background-color: var(--cream);
 }
 
-
 .breadcrumbs {
   font-weight: 400;
   padding: 2em 2em;
@@ -47,6 +46,7 @@ main {
   grid-template-columns: 1fr 1fr;
   grid-gap: 10vw;
   padding: 3em 10vw 8em 10vw;
+  justify-content: center;
 }
 
 .product-container > * {
@@ -192,9 +192,9 @@ button {
     padding-top: 0;
     padding-bottom: 1em;
   }
-  .flex {
+  /* .flex {
     justify-content: left;
-  }
+  } */
   .about-wrapper {
     flex-direction: column;
   }
