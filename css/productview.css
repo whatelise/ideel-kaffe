@@ -40,8 +40,6 @@ main {
 .productImage {
   padding-top: 1vw;
   padding-bottom: 2vw;
-  width: auto;
-  height: 30em;
 }
 h6 {
   padding: 0;
@@ -256,9 +254,9 @@ h6 {
     justify-content: center;
     display: flex;
   }
-  .productImage {
+  /* .productImage {
     height: 75vw;
-  }
+  } */
   .price {
     font-size: 1.8em;
     padding-bottom: 14px;
